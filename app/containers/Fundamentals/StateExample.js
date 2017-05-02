@@ -175,4 +175,67 @@ class Fundamentals extends React.Component {
   }
 }
 
+
+
+// Exercise: In Example5, Update the text size of NameShower component when the button is pressed
+
+// Solution👇
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+// Solution
+
+const NameShower2 = ({ name, fontSizeUpdated }) => (
+  <Text style={{ fontSize: fontSizeUpdated ? 22 : null }}>{name}</Text>
+);
+
+class Example6 extends React.Component {
+  state = {
+    name: 'Nader',
+    fontSizeUpdated: false,
+  }
+
+  updateName = () => {
+    this.setState({
+      name: 'Amanda',
+      fontSizeUpdated: true,
+    });
+  }
+
+  render() {
+    return (
+      <View>
+        <ComponentDivider>
+          <ExampleTitle title="Child props + state example" />
+          <Button
+            title="Update Info"
+            onPress={this.updateName}
+          />
+          <NameShower2 fontSizeUpdated={this.state.fontSizeUpdated} name={this.state.name} />
+        </ComponentDivider>
+      </View>
+    );
+  }
+}
+
 export default Fundamentals;

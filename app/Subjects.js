@@ -24,9 +24,6 @@ export default class Subjects extends React.Component {
             onPress={() => this.props.navigation.navigate('Fundamentals')}
           />
           <ListItem
-            title="React Lifecycle Methods"
-          />
-          <ListItem
             onPress={() => this.props.navigation.navigate('CoreComponents')}
             title="Core Components"
           />
