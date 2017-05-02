@@ -9,6 +9,10 @@ import ButtonComponent from './containers/CoreComponents/ButtonComponent';
 // Fundmentals
 import Fundamentals from './containers/Fundamentals/Fundamentals';
 import PropsExample from './containers/Fundamentals/PropsExample';
+import StateExample from './containers/Fundamentals/StateExample';
+import ForceUpdateExample from './containers/Fundamentals/ForceUpdateExample';
+import ComponentWillMountExample from './containers/Fundamentals/ComponentWillMountExample';
+import ComponentDidMountExample from './containers/Fundamentals/ComponentDidMountExample';
 
 const RouteConfigs = {
   // Home list
@@ -24,6 +28,10 @@ const RouteConfigs = {
   // Fundamentals
   Fundamentals: { screen: Fundamentals },
   PropsExample: { screen: PropsExample },
+  StateExample: { screen: StateExample },
+  ForceUpdateExample: { screen: ForceUpdateExample },
+  ComponentWillMountExample: { screen: ComponentWillMountExample },
+  ComponentDidMountExample: { screen: ComponentDidMountExample },
 };
 
 const StackNavigatorConfig = {

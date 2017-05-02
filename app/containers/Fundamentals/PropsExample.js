@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  View,
+  ScrollView,
   Text,
 } from 'react-native';
 
@@ -16,7 +16,7 @@ const person = {
 };
 
 
-const Child1 = (props) => {
+const Example1 = (props) => {
   return (
     <ComponentDivider>
       <Text>Name: {props.name}</Text>
@@ -24,10 +24,10 @@ const Child1 = (props) => {
     </ComponentDivider>
   );
 };
-// Usage in example: <Child1 name={person.name} age={person.age} />
+// Usage in example: <Example1 name={person.name} age={person.age} />
 
 
-const Child2 = ({ name, age, info }) => {
+const Example2 = ({ name, age, info }) => {
   return (
     <ComponentDivider>
       <Text>Name: {name}</Text>
@@ -36,10 +36,10 @@ const Child2 = ({ name, age, info }) => {
     </ComponentDivider>
   );
 };
-// Usage in example: <Child2 {...person} />
+// Usage in example: <Example2 {...person} />
 
 
-const Child3 = ({ name = 'chris' }) => {
+const Example3 = ({ name = 'chris' }) => {
   return (
     <ComponentDivider>
       <Text>
@@ -49,11 +49,11 @@ const Child3 = ({ name = 'chris' }) => {
   );
 };
 // Usages in Example:
-// <Child3 />
-// <Child3 name="Amanda" />
+// <Example3 />
+// <Example3 name="Amanda" />
 
 
-class Child4 extends React.Component {
+class Example4 extends React.Component {
   render() {
     const { name, age, info } = this.props;
     return (
@@ -65,21 +65,25 @@ class Child4 extends React.Component {
     );
   }
 }
-// Usage in example: <Child4 {...person} />
+// Usage in example: <Example4 {...person} />
 
 class PropsExample extends React.Component {
+  static navigationOptions = {
+    title: 'Props',
+  }
+
   render() {
     return (
-      <View>
+      <ScrollView>
         <ComponentDivider>
           <Text>Hello from PropsExample</Text>
         </ComponentDivider>
-        <Child1 name={person.name} age={person.age} />
-        <Child2 {...person} />
-        <Child3 />
-        <Child3 name="Amanda" />
-        <Child4 {...person} />
-      </View>
+        <Example1 name={person.name} age={person.age} />
+        <Example2 {...person} />
+        <Example3 />
+        <Example3 name="Amanda" />
+        <Example4 {...person} />
+      </ScrollView>
     );
   }
 }

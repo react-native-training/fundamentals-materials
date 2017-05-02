@@ -1,16 +1,17 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import { ListItem } from 'react-native-elements';
+import { Text, View, Platform, StyleSheet, TouchableHighlight, TouchableNativeFeedback } from 'react-native';
 
 let styles;
 
+let Component = TouchableHighlight;
+if (Platform.OS === 'android') Component = TouchableNativeFeedback;
+
 const UpdatedListItem = ({ title, onPress }) => (
-  <ListItem
-    title={title}
-    underlayColor="#dedede"
-    onPress={onPress}
-    containerStyle={styles.listItem}
-  />
+  <Component onPress={onPress} underlayColor='transparent'>
+    <View style={styles.listItem}>
+      <Text style={styles.text}>{title}</Text>
+    </View>
+  </Component>
 );
 
 UpdatedListItem.defaultProps = {
@@ -27,6 +28,12 @@ styles = StyleSheet.create({
   listItem: {
     borderBottomWidth: 1,
     borderBottomColor: '#dddddd',
+    height: 50,
+    paddingLeft: 20,
+    justifyContent: 'center',
+  },
+  text: {
+    fontSize: 16,
   },
 });
 

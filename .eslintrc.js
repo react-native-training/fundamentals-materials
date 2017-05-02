@@ -10,6 +10,8 @@ module.exports = {
         "react/prop-types": 0,
         "react/no-multi-comp": 0,
         "react/prefer-stateless-function": 0,
+        "react/no-array-index-key": 0,
+        "arrow-body-style": 0,
     },
     "parser": "babel-eslint",
 };

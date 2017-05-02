@@ -18,8 +18,20 @@ export default class Fundamentals extends React.Component {
             title="Props"
           />
           <ListItem
-            onPress={() => this.props.navigation.navigate('State')}
+            onPress={() => this.props.navigation.navigate('StateExample')}
             title="State"
+          />
+          <ListItem
+            onPress={() => this.props.navigation.navigate('ForceUpdateExample')}
+            title="forceUpdate"
+          />
+          <ListItem
+            onPress={() => this.props.navigation.navigate('ComponentWillMountExample')}
+            title="componentWillMount"
+          />
+          <ListItem
+            onPress={() => this.props.navigation.navigate('ComponentDidMountExample')}
+            title="componentDidMountExample"
           />
         </ScrollView>
       </View>
