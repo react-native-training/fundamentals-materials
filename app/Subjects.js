@@ -17,7 +17,7 @@ export default class Subjects extends React.Component {
         <ScrollView contentContainerStyle={styles.container}>
           <ListItem
             title="ES 2015"
-            onPress={() => this.props.navigation.navigate('TextItem')}
+            onPress={() => this.props.navigation.navigate('ES2015')}
           />
           <ListItem
             title="React Fundamentals"

@@ -5,7 +5,6 @@ import ComponentDivider from '../../components/ComponentDivider';
 import ExampleTitle from '../../components/ExampleTitle';
 
 class ShouldComponentUpdateExample extends React.Component {
-
   state = {
     age: 36,
   }
@@ -16,8 +15,6 @@ class ShouldComponentUpdateExample extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    // return true (default behaviour)
-
     // State:
     console.log('nextState: ', nextState);
     console.log('state: ', this.state);
@@ -26,7 +23,7 @@ class ShouldComponentUpdateExample extends React.Component {
     console.log('nextProps: ', nextProps);
     console.log('props: ', this.props);
 
-    // return true;
+    // return true (default behaviour)
     return false;
   }
 
@@ -39,7 +36,7 @@ class ShouldComponentUpdateExample extends React.Component {
   render() {
     return (
       <ComponentDivider>
-        <ExampleTitle title="componentWillReceiveProps Example" />
+        <ExampleTitle title="shouldComponentUpdate Example" />
         <Text>{this.props.name}</Text>
         <Text>{this.state.age}</Text>
         <Button onPress={this.updateAge} title="Increment Age" />
@@ -51,7 +48,7 @@ class ShouldComponentUpdateExample extends React.Component {
 
 export default class componentPassingProps extends React.Component {
   static navigationOptions = {
-    title: 'componentWillReceivePropsExample Example',
+    title: 'shouldComponentUpdate Example',
   }
 
   state = {
@@ -75,6 +72,6 @@ export default class componentPassingProps extends React.Component {
           onPress={this.updateName}
         />
       </ScrollView>
-    )
-  } 
+    );
+  }
 }

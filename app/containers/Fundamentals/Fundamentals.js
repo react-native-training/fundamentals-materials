@@ -22,6 +22,10 @@ export default class Fundamentals extends React.Component {
             title="State"
           />
           <ListItem
+            onPress={() => this.props.navigation.navigate('ConditionalRenderExample')}
+            title="Conditional Rendering"
+          />
+          <ListItem
             onPress={() => this.props.navigation.navigate('ForceUpdateExample')}
             title="forceUpdate"
           />
@@ -40,6 +44,14 @@ export default class Fundamentals extends React.Component {
           <ListItem
             onPress={() => this.props.navigation.navigate('ShouldComponentUpdateExample')}
             title="shouldComponentUpdate"
+          />
+          <ListItem
+            onPress={() => this.props.navigation.navigate('ComponentWillUpdateExample')}
+            title="componentWillUpdate"
+          />
+          <ListItem
+            onPress={() => this.props.navigation.navigate('ComponentDidUpdateExample')}
+            title="componentDidUpdate"
           />
         </ScrollView>
       </View>

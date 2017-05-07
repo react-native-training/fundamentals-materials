@@ -157,6 +157,36 @@ class Example5 extends React.Component {
   }
 }
 
+// Example of state callback
+
+class Example6 extends React.Component {
+  state = {
+    name: 'Nader',
+  }
+
+  updateName = () => {
+    this.setState({ name: 'Amanda' });
+    // This name gets logged out as the old name
+    // setState is an asynchronous function
+    console.log('name:', this.state.name);
+  }
+
+  render() {
+    return (
+      <View>
+        <ComponentDivider>
+          <ExampleTitle title="setState callback example" />
+          <Button
+            title="Update Name"
+            onPress={this.updateName}
+          />
+          <NameShower name={this.state.name} />
+        </ComponentDivider>
+      </View>
+    );
+  }
+}
+
 
 class Fundamentals extends React.Component {
   static navigationOptions = {
@@ -170,6 +200,7 @@ class Fundamentals extends React.Component {
         <Example3 />
         <Example4 />
         <Example5 />
+        <Example6 />
       </ScrollView>
     );
   }
@@ -209,7 +240,7 @@ const NameShower2 = ({ name, fontSizeUpdated }) => (
   <Text style={{ fontSize: fontSizeUpdated ? 22 : null }}>{name}</Text>
 );
 
-class Example6 extends React.Component {
+class Example7 extends React.Component {
   state = {
     name: 'Nader',
     fontSizeUpdated: false,
