@@ -35,6 +35,11 @@ class ObjectDestructuring extends React.Component {
     console.log('profession:', profession);
     console.log('currentCity:', currentCity);
 
+    const getInfo = ({ name, age }) => {
+      return name + ' ' + age + ' ';
+    };
+
+    console.log('getInfo(obj): ', getInfo(obj)); // nader 36
 
     return (
       <ScrollView>
@@ -114,6 +119,12 @@ examples = {
 
   console.log('profession:', profession); // programmer
   console.log('currentCity:', currentCity); // Seattle
+
+  const getInfo = ({ name, age }) => {
+    return name + ' ' + age;
+  }
+
+  getInfo(obj, obj2);  // nader 36
 
   `,
 };

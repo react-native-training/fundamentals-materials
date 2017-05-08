@@ -1,19 +1,18 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, Text } from 'react-native';
+import ExampleTitle from '../../../components/ExampleTitle';
 
-const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// importing defaults does not require curly braces
+import name from './ExportDefault';
 
-const someObject = {
-  name: 'Nader',
-  info: {
-    address: '213 Brisage Blvd',
-    age: 23,
-    profession: 'Developer',
-    favoriteThings: [
-      'eating', 'sleeping',
-    ],
-  },
-};
+// importing from file that does not have default export
+import { IS_LOADING, IS_LOADED } from './Export';
+
+// importing both from a single file
+import info, { logInfo } from './ExportBoth';
+
+// import as alias
+import { CustomViewComponent as View } from './CustomViewComponent';
 
 class Modules extends React.Component {
   static navigationOptions = () => ({
@@ -21,9 +20,23 @@ class Modules extends React.Component {
   });
 
   render() {
+    console.log('ISLOADING: ', IS_LOADING);
+
+    console.log('ISLOADED: ', IS_LOADED);
+
+    console.log('Current city:', info.currentCity);
+
+    logInfo();
+
     return (
-      <View>
-      </View>
+      <ScrollView>
+        <ExampleTitle
+          title={`Name: ${name}`}
+        />
+        <View>
+          <Text>hello from custom view</Text>
+        </View>
+      </ScrollView>
     );
   }
 }

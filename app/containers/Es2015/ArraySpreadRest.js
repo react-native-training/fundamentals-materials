@@ -22,17 +22,26 @@ class ArraySpreadRest extends React.Component {
 
     const odds = [1, 3, 5, 7, 9];
 
-    const events = [2, 4, 6, 8, 10];
+    const evens = [2, 4, 6, 8, 10];
 
     const [a, b, ...rest] = odds;
 
     console.log('a:', a); // 1
     console.log('b:', b); // 3
 
-    console.log('rest:', rest); // [5, 7, 9]  
+    console.log('rest:', rest); // [5, 7, 9]
+
+    const [c, ...rest2] = evens;
+
+    console.log('c: ', c); // 2
+
+    console.log('rest2: ', rest2); // [4, 6, 8, 10];
 
     return (
       <ScrollView>
+        <ExampleTitle
+          title="The rest parameter syntax allows us to represent an indefinite number of arguments as an array."
+        />
         <ExampleTitle
           title="ES5"
         />
@@ -78,14 +87,20 @@ examples = {
 
     const odds = [1, 3, 5, 7, 9];
 
-    const events = [2, 4, 6, 8, 10];
+    const evens = [2, 4, 6, 8, 10];
 
     const [a, b, ...rest] = odds;
 
     console.log('a:', a); // 1
     console.log('b:', b); // 3
 
-    console.log('rest:', rest); // [5, 7, 9]  
+    console.log('rest:', rest); // [5, 7, 9]
+
+    const [c, ...rest2] = evens;
+
+    console.log('c: ', c); // 2
+
+    console.log('rest2: ', rest2); // [4, 6, 8, 10];
   
   `,
 };

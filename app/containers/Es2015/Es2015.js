@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 
 import ListItem from '../../components/ListItem';
 
@@ -10,14 +10,10 @@ class Es2015 extends React.Component {
 
   render() {
     return (
-      <View>
+      <ScrollView>
         <ListItem
           title="LetConst"
           onPress={() => this.props.navigation.navigate('LetConst')}
-        />
-        <ListItem
-          title="Multi Line Strings"
-          onPress={() => this.props.navigation.navigate('MultiLineStrings')}
         />
         <ListItem
           title="Arrow / Lambda Functions"
@@ -55,7 +51,7 @@ class Es2015 extends React.Component {
           title="Modules"
           onPress={() => this.props.navigation.navigate('Modules')}
         />
-      </View>
+      </ScrollView>
     );
   }
 }
