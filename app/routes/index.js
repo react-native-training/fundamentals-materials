@@ -10,11 +10,14 @@ import {
   ES2015,
   ArrowFunctions,
   DefaultArguments,
-  Destructuring,
+  ArrayDestructuring,
+  ObjectDestructuring,
+  ArraySpreadRest,
+  ObjectSpreadRest,
   LetConst,
   MultiLineStrings,
   Promises,
-  TemplateStrings,
+  TemplateLiterals,
   Modules,
 } from './ES2015';
 
@@ -50,11 +53,14 @@ const RouteConfigs = {
   ES2015: { screen: ES2015 },
   ArrowFunctions: { screen: ArrowFunctions },
   DefaultArguments: { screen: DefaultArguments },
-  Destructuring: { screen: Destructuring },
+  ArrayDestructuring: { screen: ArrayDestructuring },
+  ObjectDestructuring: { screen: ObjectDestructuring },
+  ArraySpreadRest: { screen: ArraySpreadRest },
+  ObjectSpreadRest: { screen: ObjectSpreadRest },
   LetConst: { screen: LetConst },
   MultiLineStrings: { screen: MultiLineStrings },
   Promises: { screen: Promises },
-  TemplateStrings: { screen: TemplateStrings },
+  TemplateLiterals: { screen: TemplateLiterals },
   Modules: { screen: Modules },
 
   // Core Components

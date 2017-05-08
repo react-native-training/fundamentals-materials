@@ -12,6 +12,8 @@ module.exports = {
         "react/prefer-stateless-function": 0,
         "react/no-array-index-key": 0,
         "arrow-body-style": 0,
+        "no-param-reassign": 0,
+        "import/no-extraneous-dependencies": 0,
     },
     "parser": "babel-eslint",
 };

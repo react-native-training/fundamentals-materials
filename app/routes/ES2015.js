@@ -1,21 +1,27 @@
 import ES2015 from '../containers/Es2015/Es2015';
 import ArrowFunctions from '../containers/Es2015/ArrowFunctions';
 import DefaultArguments from '../containers/Es2015/DefaultArguments';
-import Destructuring from '../containers/Es2015/Destructuring';
+import ArrayDestructuring from '../containers/Es2015/ArrayDestructuring';
+import ObjectDestructuring from '../containers/Es2015/ObjectDestructuring';
+import ArraySpreadRest from '../containers/Es2015/ArraySpreadRest';
+import ObjectSpreadRest from '../containers/Es2015/ObjectSpreadRest';
 import LetConst from '../containers/Es2015/LetConst';
 import MultiLineStrings from '../containers/Es2015/MultilineStrings';
 import Promises from '../containers/Es2015/Promises';
-import TemplateStrings from '../containers/Es2015/TemplateStrings';
+import TemplateLiterals from '../containers/Es2015/TemplateLiterals';
 import Modules from '../containers/Es2015/Modules/Modules';
 
 export {
   ES2015,
   ArrowFunctions,
   DefaultArguments,
-  Destructuring,
+  ArrayDestructuring,
+  ObjectDestructuring,
+  ArraySpreadRest,
+  ObjectSpreadRest,
   LetConst,
   MultiLineStrings,
   Promises,
-  TemplateStrings,
+  TemplateLiterals,
   Modules,
 };

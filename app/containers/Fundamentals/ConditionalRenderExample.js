@@ -7,31 +7,53 @@ import {
 
 import ComponentDivider from '../../components/ComponentDivider';
 
-const Example1 = (props) => {
-  return (
-    <ComponentDivider>
-      <Text>Name: {props.name}</Text>
-      <Text>Age: {props.age}</Text>
-    </ComponentDivider>
-  );
-};
-
 class ConditionalRenderExample extends React.Component {
   static navigationOptions = {
-    title: 'Props',
+    title: 'Conditional Render Example',
+  }
+
+  state = {
+    isLoaded: false,
+    isLoading: false,
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeout);
+  }
+
+  load = () => {
+    this.setState({
+      isLoading: true,
+    });
+    this.timeout = setTimeout(() => {
+      this.setState({
+        isLoading: false,
+        isLoaded: true,
+      });
+    }, 3000);
   }
 
   render() {
+    const data = true;
+    if (!data) {
+      return <Text>No data..</Text>;
+    }
+
+    const { isLoading, isLoaded } = this.state;
     return (
       <ScrollView>
         <ComponentDivider>
-          <Text>Hello from PropsExample</Text>
+          <Text style={{ textAlign: 'center' }}>Hello from ConditionalRenderExample</Text>
+          {
+            !isLoading && !isLoaded && <Text onPress={this.load}>Load</Text>
+          }
+          {
+            isLoading && <Text>Loading...</Text>
+          }
+          {
+            isLoaded && <Text>Here is the loaded data!</Text>
+          }
         </ComponentDivider>
-        <Example1 name={person.name} age={person.age} />
-        <Example2 {...person} />
-        <Example3 />
-        <Example3 name="Amanda" />
-        <Example4 {...person} />
       </ScrollView>
     );
   }

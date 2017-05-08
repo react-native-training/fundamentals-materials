@@ -1,21 +1,10 @@
 import React from 'react';
-import { View, Button } from 'react-native';
+import { ScrollView } from 'react-native';
+import SyntaxHighlighter from '../../components/SyntaxHighlighter';
 
 import ExampleTitle from '../../components/ExampleTitle';
 
-const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-const someObject = {
-  name: 'Nader',
-  info: {
-    address: '213 Brisage Blvd',
-    age: 23,
-    profession: 'Developer',
-    favoriteThings: [
-      'eating', 'sleeping',
-    ],
-  },
-};
+let examples = {};
 
 class MultilineStrings extends React.Component {
   static navigationOptions = () => ({
@@ -23,9 +12,24 @@ class MultilineStrings extends React.Component {
   });
 
   render() {
+    const multiline1 = '\n Hello,\n my name is Nader\n and I am\n 36';
+
+    console.log('multiline1:', multiline1);
+
+    const multiline2 = `
+ Hello, 
+ my name is Nader
+ and I am
+ 36
+    `;
+    console.log('multiline2: ', multiline2);
+
     return (
-      <View>
-      </View>
+      <ScrollView>
+        <ExampleTitle
+          title="ES5"
+        />
+      </ScrollView>
     );
   }
 }

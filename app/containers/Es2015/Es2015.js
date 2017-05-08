@@ -12,6 +12,14 @@ class Es2015 extends React.Component {
     return (
       <View>
         <ListItem
+          title="LetConst"
+          onPress={() => this.props.navigation.navigate('LetConst')}
+        />
+        <ListItem
+          title="Multi Line Strings"
+          onPress={() => this.props.navigation.navigate('MultiLineStrings')}
+        />
+        <ListItem
           title="Arrow / Lambda Functions"
           onPress={() => this.props.navigation.navigate('ArrowFunctions')}
         />
@@ -20,28 +28,32 @@ class Es2015 extends React.Component {
           onPress={() => this.props.navigation.navigate('DefaultArguments')}
         />
         <ListItem
-          title="Destructuring"
-          onPress={() => this.props.navigation.navigate('Destructuring')}
+          title="Array Spread & Rest"
+          onPress={() => this.props.navigation.navigate('ArraySpreadRest')}
         />
         <ListItem
-          title="LetConst"
-          onPress={() => this.props.navigation.navigate('LetConst')}
+          title="Object Spread & Rest"
+          onPress={() => this.props.navigation.navigate('ObjectSpreadRest')}
         />
         <ListItem
-          title="Modules"
-          onPress={() => this.props.navigation.navigate('Modules')}
+          title="Array Destructuring"
+          onPress={() => this.props.navigation.navigate('ArrayDestructuring')}
         />
         <ListItem
-          title="Multi Line Strings"
-          onPress={() => this.props.navigation.navigate('MultiLineStrings')}
+          title="Object Destructuring"
+          onPress={() => this.props.navigation.navigate('ObjectDestructuring')}
         />
         <ListItem
           title="Promises"
           onPress={() => this.props.navigation.navigate('Promises')}
         />
         <ListItem
-          title="Template Strings"
-          onPress={() => this.props.navigation.navigate('Template <Strings></Strings>')}
+          title="Template Literals"
+          onPress={() => this.props.navigation.navigate('TemplateLiterals')}
+        />
+        <ListItem
+          title="Modules"
+          onPress={() => this.props.navigation.navigate('Modules')}
         />
       </View>
     );

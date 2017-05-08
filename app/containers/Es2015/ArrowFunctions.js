@@ -1,69 +1,10 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import SyntaxHighlighter from 'react-native-syntax-highlighter';
-import { ocean as color } from 'react-syntax-highlighter/dist/styles';
+import SyntaxHighlighter from '../../components/SyntaxHighlighter';
 
 import ExampleTitle from '../../components/ExampleTitle';
 
-const regularFunctionToString = `const regularFunction = function() {
-  console.log('this is a regular function!');
-};`;
-
-const arrowFunctionToString = `const arrowFunction = () => {
-  console.log('this is an arrow function!');
-};`;
-
-const implicitReturnToString = `
-const implicitReturn = (age => age + 12);
-
-// or
-
-const implicitReturn = ((age) => age + 12);
-
-// is the same as
-
-const implicitReturn = (age) => {
-  return age + 12;
-};
-
-// is the same as
-const implicitReturn = function(age) {
-  return age + 12;
-};
-
-`;
-
-const thisScopingToString = `
-
-const someObject = {
-  name: 'Nader',
-  age: 22,
-  getName: function()  {
-    setTimeout(() => {
-      console.log('NAME:', this.name);
-    })
-  },
-}
-
-// this works
-someObject.getName();
-
-
-const someObject = {
-  name: 'Nader',
-  age: 22,
-  getName: function()  {
-    setTimeout(function() {
-      console.log('NAME:', this.name);
-    })
-  },
-}
-
-// this does not work, name is
-// undefined (this now referring to getName)
-someObject.getName();
-
-`;
+const examples = {};
 
 const regularFunction = function() {
   console.log('this is a regular function!');
@@ -108,62 +49,119 @@ class ArrowFunctions extends React.Component {
   }
   
   render() {
-    regularFunction();
+    // regularFunction();
 
-    arrowFunction1();
+    // arrowFunction1();
 
-    explicitReturn();
+    // explicitReturn();
 
-    addMe(1, 2);
+    // addMe(1, 2);
 
-    squared(10);
+    // squared(10);
 
-    someObject.getName();
-    console.log('evens:', evens);
+    // someObject.getName();
+    // console.log('evens:', evens);
     return (
       <ScrollView>
         <ExampleTitle
           title="ES5"
         />
-        <SyntaxHighlighter
-          language='javascript'
-          style={color}
-        >
-          {regularFunctionToString}
+        <SyntaxHighlighter>
+          {examples.regularFunctionToString}
         </SyntaxHighlighter>
 
         <ExampleTitle
           title="ES2015"
         />
-        <SyntaxHighlighter
-          language='javascript'
-          style={color}
-        >
-          {arrowFunctionToString}
+        <SyntaxHighlighter>
+          {examples.arrowFunctionToString}
         </SyntaxHighlighter>
 
         <ExampleTitle
           title="Implicit Return"
         />
-        <SyntaxHighlighter
-          language='javascript'
-          style={color}
-        >
-          {implicitReturnToString}
+        <SyntaxHighlighter>
+          {examples.implicitReturnToString}
         </SyntaxHighlighter>
 
         <ExampleTitle
           title="Lexical scope"
         />
-        <SyntaxHighlighter
-          language='javascript'
-          style={color}
-        >
-          {thisScopingToString}
+        <SyntaxHighlighter>
+          {examples.thisScopingToString}
         </SyntaxHighlighter>
       </ScrollView>
     );
   }
 }
+
+examples = {
+  regularFunctionToString: `const regularFunction = function() {
+    console.log('this is a regular function!');
+  };`,
+
+  arrowFunctionToString: `const arrowFunction = () => {
+    console.log('this is an arrow function!');
+  };`,
+
+  implicitReturnToString: `
+
+    const implicitReturn = function(age) {
+      return age + 12;
+    };
+
+    // is the same as
+
+    const implicitReturn = age => age + 12;
+
+    // or
+
+    const implicitReturn = (age) => age + 12;
+
+    // is the same as
+
+    const implicitReturn = (age) => {
+      return age + 12;
+    };
+
+    // or
+
+    const implicitReturn = age => {
+      return age + 12;
+    };
+
+  `,
+
+  thisScopingToString: `
+    const someObject = {
+      name: 'Nader',
+      age: 22,
+      getName: function()  {
+        setTimeout(() => {
+          console.log('NAME:', this.name);
+        })
+      },
+    }
+
+    // this works
+    someObject.getName();
+
+
+    const someObject = {
+      name: 'Nader',
+      age: 22,
+      getName: function()  {
+        setTimeout(function() {
+          console.log('NAME:', this.name);
+        })
+      },
+    }
+
+    // this does not work, name is
+    // undefined (this now referring to getName)
+    someObject.getName();
+
+  `,
+};
 
 export default ArrowFunctions;
