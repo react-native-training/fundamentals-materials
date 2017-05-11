@@ -14,6 +14,7 @@ module.exports = {
         "arrow-body-style": 0,
         "no-param-reassign": 0,
         "import/no-extraneous-dependencies": 0,
+        "object-shorthand": 0,
     },
     "parser": "babel-eslint",
 };

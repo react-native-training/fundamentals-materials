@@ -40,6 +40,10 @@ class Es2015 extends React.Component {
           onPress={() => this.props.navigation.navigate('ObjectDestructuring')}
         />
         <ListItem
+          title="Object Shorthand"
+          onPress={() => this.props.navigation.navigate('ObjectShorthand')}
+        />
+        <ListItem
           title="Promises"
           onPress={() => this.props.navigation.navigate('Promises')}
         />

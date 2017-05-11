@@ -12,6 +12,7 @@ import {
   DefaultArguments,
   ArrayDestructuring,
   ObjectDestructuring,
+  ObjectShorthand,
   ArraySpreadRest,
   ObjectSpreadRest,
   LetConst,
@@ -39,11 +40,23 @@ import {
 // Core Components
 import {
   CoreComponents,
-  ButtonComponentExample,
-  TextComponentExample,
-  TextInputComponentExample,
+  ButtonExample,
+  TextExample,
+  TextInputExample,
+  ViewExample,
+  ScrollViewExample,
+  MapListExample,
+  FlatListExample,
+  SectionListExample,
+  ChallengeOne,
+  ChallengeTwo,
 } from './CoreComponents';
 
+// Cross Platform Components
+import {
+  CrossPlatformComponents,
+  ActivityIndicatorExample,
+} from './CrossPlatformComponents';
 
 const RouteConfigs = {
   // Home list
@@ -55,6 +68,7 @@ const RouteConfigs = {
   DefaultArguments: { screen: DefaultArguments },
   ArrayDestructuring: { screen: ArrayDestructuring },
   ObjectDestructuring: { screen: ObjectDestructuring },
+  ObjectShorthand: { screen: ObjectShorthand },
   ArraySpreadRest: { screen: ArraySpreadRest },
   ObjectSpreadRest: { screen: ObjectSpreadRest },
   LetConst: { screen: LetConst },
@@ -65,9 +79,16 @@ const RouteConfigs = {
 
   // Core Components
   CoreComponents: { screen: CoreComponents },
-  ButtonComponentExample: { screen: ButtonComponentExample },
-  TextComponentExample: { screen: TextComponentExample },
-  TextInputComponentExample: { screen: TextInputComponentExample },
+  ButtonExample: { screen: ButtonExample },
+  TextExample: { screen: TextExample },
+  TextInputExample: { screen: TextInputExample },
+  ViewExample: { screen: ViewExample },
+  ScrollViewExample: { screen: ScrollViewExample },
+  MapListExample: { screen: MapListExample },
+  FlatListExample: { screen: FlatListExample },
+  SectionListExample: { screen: SectionListExample },
+  ChallengeOne: { screen: ChallengeOne },
+  ChallengeTwo: { screen: ChallengeTwo },
 
   // Fundamentals
   Fundamentals: { screen: Fundamentals },
@@ -81,6 +102,10 @@ const RouteConfigs = {
   ShouldComponentUpdateExample: { screen: ShouldComponentUpdateExample },
   ComponentWillUpdateExample: { screen: ComponentWillUpdateExample },
   ComponentDidUpdateExample: { screen: ComponentDidUpdateExample },
+
+  // Cross Platform Components
+  CrossPlatformComponents: { screen: CrossPlatformComponents },
+  ActivityIndicatorExample: { screen: ActivityIndicatorExample },
 };
 
 const StackNavigatorConfig = {

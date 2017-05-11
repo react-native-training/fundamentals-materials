@@ -28,7 +28,7 @@ export default class Subjects extends React.Component {
             title="Core Components"
           />
           <ListItem
-            onPress={() => this.props.navigation.navigate('CoreComponents')}
+            onPress={() => this.props.navigation.navigate('CrossPlatformComponents')}
             title="Cross Platform Components"
           />
           <ListItem

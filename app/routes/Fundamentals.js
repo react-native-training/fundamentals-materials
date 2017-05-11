@@ -1,4 +1,4 @@
-import Fundamentals from '../containers/Fundamentals/Fundamentals';
+import Fundamentals from '../containers/Fundamentals';
 import PropsExample from '../containers/Fundamentals/PropsExample';
 import StateExample from '../containers/Fundamentals/StateExample';
 import ConditionalRenderExample from '../containers/Fundamentals/ConditionalRenderExample';

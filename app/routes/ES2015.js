@@ -1,8 +1,9 @@
-import ES2015 from '../containers/Es2015/Es2015';
+import ES2015 from '../containers/Es2015';
 import ArrowFunctions from '../containers/Es2015/ArrowFunctions';
 import DefaultArguments from '../containers/Es2015/DefaultArguments';
 import ArrayDestructuring from '../containers/Es2015/ArrayDestructuring';
 import ObjectDestructuring from '../containers/Es2015/ObjectDestructuring';
+import ObjectShorthand from '../containers/Es2015/ObjectShorthand';
 import ArraySpreadRest from '../containers/Es2015/ArraySpreadRest';
 import ObjectSpreadRest from '../containers/Es2015/ObjectSpreadRest';
 import LetConst from '../containers/Es2015/LetConst';
@@ -24,4 +25,5 @@ export {
   Promises,
   TemplateLiterals,
   Modules,
+  ObjectShorthand,
 };
