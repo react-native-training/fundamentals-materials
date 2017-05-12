@@ -40,7 +40,6 @@ import {
 // Core Components
 import {
   CoreComponents,
-  ButtonExample,
   TextExample,
   TextInputExample,
   ViewExample,
@@ -48,15 +47,44 @@ import {
   MapListExample,
   FlatListExample,
   SectionListExample,
-  ChallengeOne,
-  ChallengeTwo,
+  CCChallengeOne,
+  CCChallengeTwo,
 } from './CoreComponents';
 
 // Cross Platform Components
 import {
   CrossPlatformComponents,
   ActivityIndicatorExample,
+  ButtonExample,
+  ImageExample,
+  ModalExample,
+  PickerExample,
+  RefreshControlExample,
+  SliderExample,
+  StatusBarExample,
+  SwitchExample,
+  TouchableHighlightExample,
+
+  // Challenges
+  CPChallengeOne,
+  CPChallengeTwo,
+  CPChallengeThree,
 } from './CrossPlatformComponents';
+
+// Android Only Components
+import {
+  AndroidOnlyComponents,
+  TouchableNativeFeedbackExample,
+} from './AndroidOnlyComponents';
+
+// iOS Only Components
+import {
+  IOSOnlyComponents,
+  DatePickerIOSExample,
+  ProgressViewIOSExample,
+  SegmentedControlIOSExample,
+  TabBarIOSExample,
+} from './IOSOnlyComponents';
 
 const RouteConfigs = {
   // Home list
@@ -79,7 +107,6 @@ const RouteConfigs = {
 
   // Core Components
   CoreComponents: { screen: CoreComponents },
-  ButtonExample: { screen: ButtonExample },
   TextExample: { screen: TextExample },
   TextInputExample: { screen: TextInputExample },
   ViewExample: { screen: ViewExample },
@@ -87,8 +114,8 @@ const RouteConfigs = {
   MapListExample: { screen: MapListExample },
   FlatListExample: { screen: FlatListExample },
   SectionListExample: { screen: SectionListExample },
-  ChallengeOne: { screen: ChallengeOne },
-  ChallengeTwo: { screen: ChallengeTwo },
+  CCChallengeOne: { screen: CCChallengeOne },
+  CCChallengeTwo: { screen: CCChallengeTwo },
 
   // Fundamentals
   Fundamentals: { screen: Fundamentals },
@@ -106,6 +133,29 @@ const RouteConfigs = {
   // Cross Platform Components
   CrossPlatformComponents: { screen: CrossPlatformComponents },
   ActivityIndicatorExample: { screen: ActivityIndicatorExample },
+  ButtonExample: { screen: ButtonExample },
+  ImageExample: { screen: ImageExample },
+  ModalExample: { screen: ModalExample },
+  PickerExample: { screen: PickerExample },
+  RefreshControlExample: { screen: RefreshControlExample },
+  SliderExample: { screen: SliderExample },
+  StatusBarExample: { screen: StatusBarExample },
+  SwitchExample: { screen: SwitchExample },
+  TouchableHighlightExample: { screen: TouchableHighlightExample },
+  CPChallengeOne: { screen: CPChallengeOne },
+  CPChallengeTwo: { screen: CPChallengeTwo },
+  CPChallengeThree: { screen: CPChallengeThree },
+
+  // Android Only Components
+  AndroidOnlyComponents: { screen: AndroidOnlyComponents },
+  TouchableNativeFeedbackExample: { screen: TouchableNativeFeedbackExample },
+
+  // iOS Only Components
+  IOSOnlyComponents: { screen: IOSOnlyComponents },
+  DatePickerIOSExample: { screen: DatePickerIOSExample },
+  ProgressViewIOSExample: { screen: ProgressViewIOSExample },
+  SegmentedControlIOSExample: { screen:SegmentedControlIOSExample },
+  TabBarIOSExample: { screen: TabBarIOSExample },
 };
 
 const StackNavigatorConfig = {

@@ -1,4 +1,3 @@
 rootProject.name = 'materials'
 
-
 include ':app'

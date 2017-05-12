@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import ListItem from '../../components/ListItem';
 
 class CoreComponents extends React.Component {
@@ -9,7 +9,7 @@ class CoreComponents extends React.Component {
 
   render() {
     return (
-      <View>
+      <ScrollView>
         <ListItem
           title="Text"
           onPress={() => this.props.navigation.navigate('TextExample')}
@@ -28,7 +28,7 @@ class CoreComponents extends React.Component {
         />
         <ListItem
           title="Challenge One"
-          onPress={() => this.props.navigation.navigate('ChallengeOne')}
+          onPress={() => this.props.navigation.navigate('CCChallengeOne')}
         />
         <ListItem
           title="Map List"
@@ -44,9 +44,9 @@ class CoreComponents extends React.Component {
         />
         <ListItem
           title="Challenge Two"
-          onPress={() => this.props.navigation.navigate('ChallengeTwo')}
+          onPress={() => this.props.navigation.navigate('CCChallengeTwo')}
         />
-      </View>
+      </ScrollView>
     );
   }
 }

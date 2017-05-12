@@ -4,11 +4,13 @@
  * @flow
  */
 
-import React, { Component } from 'react';
 import {
   AppRegistry,
 } from 'react-native';
 
 import App from './app/App';
+
+console.ignoredYellowBox = ['Remote debugger'];
+console.disableYellowBox = true;
 
 AppRegistry.registerComponent('materials', () => App);

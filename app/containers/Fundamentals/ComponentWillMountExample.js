@@ -16,11 +16,15 @@ export default class ComponentWillMountExample extends React.Component {
   }
 
   componentWillMount() {
-    setTimeout(() => {
+    this.timeOut = setTimeout(() => {
       this.setState({
         tick: this.state.tick + 1,
       });
     }, 2000);
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeOut);
   }
 
   render() {

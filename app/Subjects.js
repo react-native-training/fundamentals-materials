@@ -32,11 +32,11 @@ export default class Subjects extends React.Component {
             title="Cross Platform Components"
           />
           <ListItem
-            onPress={() => this.props.navigation.navigate('CoreComponents')}
+            onPress={() => this.props.navigation.navigate('IOSOnlyComponents')}
             title="IOS Specific Components"
           />
           <ListItem
-            onPress={() => this.props.navigation.navigate('CoreComponents')}
+            onPress={() => this.props.navigation.navigate('AndroidOnlyComponents')}
             title="Android Specific Components"
           />
         </ScrollView>

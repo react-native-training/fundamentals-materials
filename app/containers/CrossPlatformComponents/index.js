@@ -28,6 +28,10 @@ class CrossPlatformComponents extends React.Component {
           onPress={() => this.props.navigation.navigate('ModalExample')}
         />
         <ListItem
+          title="Challenge One"
+          onPress={() => this.props.navigation.navigate('CPChallengeOne')}
+        />
+        <ListItem
           title="Picker"
           onPress={() => this.props.navigation.navigate('PickerExample')}
         />
@@ -44,16 +48,16 @@ class CrossPlatformComponents extends React.Component {
           onPress={() => this.props.navigation.navigate('StatusBarExample')}
         />
         <ListItem
+          title="Challenge Two"
+          onPress={() => this.props.navigation.navigate('CPChallengeTwo')}
+        />
+        <ListItem
           title="Switch"
           onPress={() => this.props.navigation.navigate('SwitchExample')}
         />
         <ListItem
           title="TouchableHighlight"
           onPress={() => this.props.navigation.navigate('TouchableHighlightExample')}
-        />
-        <ListItem
-          title="TouchableNativeFeedback"
-          onPress={() => this.props.navigation.navigate('TouchableNativeFeedbackExample')}
         />
       </ScrollView>
     );

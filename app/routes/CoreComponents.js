@@ -1,6 +1,5 @@
 // Components
 import CoreComponents from '../containers/CoreComponents';
-import ButtonExample from '../containers/CoreComponents/ButtonExample';
 import TextExample from '../containers/CoreComponents/TextExample';
 import TextInputExample from '../containers/CoreComponents/TextInputExample';
 import ScrollViewExample from '../containers/CoreComponents/ScrollViewExample';
@@ -10,13 +9,12 @@ import FlatListExample from '../containers/CoreComponents/FlatListExample';
 import SectionListExample from '../containers/CoreComponents/SectionListExample';
 
 // Challenges
-import ChallengeOne from '../containers/CoreComponents/ChallengeOne';
-import ChallengeTwo from '../containers/CoreComponents/ChallengeTwo';
+import CCChallengeOne from '../containers/CoreComponents/ChallengeOne';
+import CCChallengeTwo from '../containers/CoreComponents/ChallengeTwo';
 
 export {
   // Componnets
   CoreComponents,
-  ButtonExample,
   TextExample,
   TextInputExample,
   ScrollViewExample,
@@ -26,6 +24,6 @@ export {
   SectionListExample,
 
   // Challenges
-  ChallengeOne,
-  ChallengeTwo,
+  CCChallengeOne,
+  CCChallengeTwo,
 };
