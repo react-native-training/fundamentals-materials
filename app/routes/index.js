@@ -97,7 +97,26 @@ import {
   Loop,
   CreateAnimatedComponent,
   Transforms,
+  Sequence,
+  AnimationChallengeOne,
+  AnimationChallengeTwo,
 } from './Animations';
+
+// Styling
+import {
+  Styling,
+  TextStyling,
+  ViewStyling,
+  ColorsExample,
+  MarginVSPadding,
+  Position,
+  ZIndex,
+} from './Styling';
+
+// Flexbox
+import {
+  Flexbox,
+} from './Flexbox';
 
 const RouteConfigs = {
   // Home list
@@ -180,6 +199,21 @@ const RouteConfigs = {
   Parallel: { screen: Parallel },
   Loop: { screen: Loop },
   CreateAnimatedComponent: { screen: CreateAnimatedComponent },
+  Sequence: { screen: Sequence },
+  AnimationChallengeOne: { screen: AnimationChallengeOne },
+  AnimationChallengeTwo: { screen: AnimationChallengeTwo },
+
+  // Styling
+  Styling: { screen: Styling },
+  TextStyling: { screen: TextStyling },
+  ViewStyling: { screen: ViewStyling },
+  ColorsExample: { screen: ColorsExample },
+  MarginVSPadding: { screen: MarginVSPadding },
+  Position: { screen: Position },
+  ZIndex: { screen: ZIndex },
+
+  // Flexbox
+  Flexbox: { screen: Flexbox },
 };
 
 const StackNavigatorConfig = {

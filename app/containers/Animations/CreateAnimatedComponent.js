@@ -36,11 +36,12 @@ class CreateAnimatedComponent extends React.Component {
 
     return (
       <View style={styles.container}>
-        <Button title="Animate With Easing" onPress={this.animate} />
+        <Button title="Animate Custom Component" onPress={this.animate} />
         <AnimatedButton
           underlayColor="#dddddd"
           onPress={console.log}
-          style={[styles.button, { transform: [{ scale: this.animatedButton }] }]}>
+          style={[styles.button, { transform: [{ scale: this.animatedButton }] }]}
+        >
           <Text style={styles.buttonText}>HELLO!</Text>
         </AnimatedButton>
       </View>

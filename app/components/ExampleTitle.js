@@ -8,10 +8,10 @@ import {
 
 let styles;
 
-const ExampleTitle = ({ title }) => {
+const ExampleTitle = ({ title, textStyle }) => {
   return (
     <View style={styles.container}>
-      <Text>{title}</Text>
+      <Text style={textStyle}>{title}</Text>
     </View>
   );
 };

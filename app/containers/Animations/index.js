@@ -31,12 +31,24 @@ class Animations extends React.Component {
           onPress={() => this.props.navigation.navigate('Parallel')}
         />
         <ListItem
+          title="Challenge One"
+          onPress={() => this.props.navigation.navigate('AnimationChallengeOne')}
+        />
+        <ListItem
           title="Loop Animation"
           onPress={() => this.props.navigation.navigate('Loop')}
         />
         <ListItem
           title="Create Animated Component"
           onPress={() => this.props.navigation.navigate('CreateAnimatedComponent')}
+        />
+        <ListItem
+          title="Sequence"
+          onPress={() => this.props.navigation.navigate('Sequence')}
+        />
+        <ListItem
+          title="Challenge Two"
+          onPress={() => this.props.navigation.navigate('AnimationChallengeTwo')}
         />
       </ScrollView>
     );

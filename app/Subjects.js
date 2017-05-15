@@ -43,6 +43,14 @@ export default class Subjects extends React.Component {
             onPress={() => this.props.navigation.navigate('Animations')}
             title="Animations"
           />
+          <ListItem
+            onPress={() => this.props.navigation.navigate('Styling')}
+            title="Styling"
+          />
+          <ListItem
+            onPress={() => this.props.navigation.navigate('Flexbox')}
+            title="Flexbox"
+          />
         </ScrollView>
       </View>
     );
