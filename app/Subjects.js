@@ -39,6 +39,10 @@ export default class Subjects extends React.Component {
             onPress={() => this.props.navigation.navigate('AndroidOnlyComponents')}
             title="Android Specific Components"
           />
+          <ListItem
+            onPress={() => this.props.navigation.navigate('Animations')}
+            title="Animations"
+          />
         </ScrollView>
       </View>
     );

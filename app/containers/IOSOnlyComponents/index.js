@@ -26,6 +26,10 @@ class IOSOnlyComponents extends React.Component {
           title="TabBarIOS"
           onPress={() => this.props.navigation.navigate('TabBarIOSExample')}
         />
+        <ListItem
+          title="Challenge One"
+          onPress={() => this.props.navigation.navigate('IOSChallengeOne')}
+        />
       </ScrollView>
     );
   }

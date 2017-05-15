@@ -84,7 +84,20 @@ import {
   ProgressViewIOSExample,
   SegmentedControlIOSExample,
   TabBarIOSExample,
+  IOSChallengeOne,
 } from './IOSOnlyComponents';
+
+// Animations
+import {
+  Animations,
+  Timing,
+  Easing,
+  Interpolation,
+  Parallel,
+  Loop,
+  CreateAnimatedComponent,
+  Transforms,
+} from './Animations';
 
 const RouteConfigs = {
   // Home list
@@ -154,8 +167,19 @@ const RouteConfigs = {
   IOSOnlyComponents: { screen: IOSOnlyComponents },
   DatePickerIOSExample: { screen: DatePickerIOSExample },
   ProgressViewIOSExample: { screen: ProgressViewIOSExample },
-  SegmentedControlIOSExample: { screen:SegmentedControlIOSExample },
+  SegmentedControlIOSExample: { screen: SegmentedControlIOSExample },
   TabBarIOSExample: { screen: TabBarIOSExample },
+  IOSChallengeOne: { screen: IOSChallengeOne },
+
+  // Animations
+  Animations: { screen: Animations },
+  Timing: { screen: Timing },
+  Easing: { screen: Easing },
+  Transforms: { screen: Transforms },
+  Interpolation: { screen: Interpolation },
+  Parallel: { screen: Parallel },
+  Loop: { screen: Loop },
+  CreateAnimatedComponent: { screen: CreateAnimatedComponent },
 };
 
 const StackNavigatorConfig = {

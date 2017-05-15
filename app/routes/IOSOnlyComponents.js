@@ -3,6 +3,7 @@ import DatePickerIOSExample from '../containers/IOSOnlyComponents/DatePickerIOSE
 import ProgressViewIOSExample from '../containers/IOSOnlyComponents/ProgressViewIOSExample';
 import SegmentedControlIOSExample from '../containers/IOSOnlyComponents/SegmentedControlIOSExample';
 import TabBarIOSExample from '../containers/IOSOnlyComponents/TabBarIOSExample';
+import IOSChallengeOne from '../containers/IOSOnlyComponents/ChallengeOne';
 
 export {
   IOSOnlyComponents,
@@ -10,4 +11,5 @@ export {
   ProgressViewIOSExample,
   SegmentedControlIOSExample,
   TabBarIOSExample,
+  IOSChallengeOne,
 };
