@@ -4,15 +4,13 @@ import {
   StyleSheet,
 } from 'react-native';
 
-let styles;
-
 const ComponentDivider = ({ children, style }) => (
   <View style={[styles.container, style]}>
     {children}
   </View>
 );
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     padding: 10,
     paddingLeft: 20,

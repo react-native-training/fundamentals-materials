@@ -7,7 +7,6 @@ import { View, Animated, Button, StyleSheet } from 'react-native';
 *  Animated.Text
 *  Animated.View
 */
-let styles = {};
 
 class Timing extends React.Component {
   static navigationOptions = () => ({
@@ -63,7 +62,7 @@ class Timing extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   block: {
     backgroundColor: '#FF9900',
   },

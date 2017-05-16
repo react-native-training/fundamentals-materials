@@ -1,8 +1,6 @@
 import React from 'react';
 import { Text, View, Platform, StyleSheet, TouchableHighlight, TouchableNativeFeedback } from 'react-native';
 
-let styles;
-
 let Component = TouchableHighlight;
 if (Platform.OS === 'android') Component = TouchableNativeFeedback;
 
@@ -24,7 +22,7 @@ UpdatedListItem.propTypes = {
   onPress: React.PropTypes.func.isRequired,
 };
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   listItem: {
     borderBottomWidth: 1,
     borderBottomColor: '#dddddd',

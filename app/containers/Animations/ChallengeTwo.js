@@ -10,8 +10,6 @@ import { View, Animated, Button, StyleSheet } from 'react-native';
 // Advanced: Animate the background color of one of the Text Elements
 // to transition between three background colors
 
-let styles = {};
-
 class ChallengeTwo extends React.Component {
   static navigationOptions = () => ({
     title: 'Challenge Two',
@@ -25,10 +23,7 @@ class ChallengeTwo extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
-  block: {
-    backgroundColor: '#FF9900',
-  },
+const styles = StyleSheet.create({
 });
 
 export default ChallengeTwo;

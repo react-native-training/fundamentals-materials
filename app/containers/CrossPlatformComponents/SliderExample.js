@@ -2,8 +2,6 @@ import React from 'react';
 import { View, Slider, Text, StyleSheet } from 'react-native';
 import ExampleTitle from '../../components/ExampleTitle';
 
-let styles = {};
-
 class SliderExample extends React.Component {
   static navigationOptions = () => ({
     title: 'Slider',
@@ -36,7 +34,7 @@ class SliderExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   text: {
     textAlign: 'center',
     margin: 20,

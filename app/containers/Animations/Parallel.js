@@ -10,8 +10,6 @@ import { Dimensions, Animated, View, TouchableHighlight, Text, StyleSheet } from
 
 const { height } = Dimensions.get('window');
 
-let styles = {};
-
 class Parallel extends React.Component {
   static navigationOptions = () => ({
     title: 'Animations',
@@ -94,7 +92,7 @@ class Parallel extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
   },

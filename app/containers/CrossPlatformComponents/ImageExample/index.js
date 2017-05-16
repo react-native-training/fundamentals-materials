@@ -3,7 +3,6 @@ import { Image, ScrollView, StyleSheet } from 'react-native';
 import ExampleTitle from '../../../components/ExampleTitle';
 
 const ReactLogo = require('./react.png');
-let styles = {};
 
 class ImageExample extends React.Component {
   static navigationOptions = () => ({
@@ -37,7 +36,7 @@ class ImageExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   image: {
     width: 300,
     height: 300,

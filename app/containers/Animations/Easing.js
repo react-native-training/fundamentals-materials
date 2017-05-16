@@ -12,8 +12,6 @@ import { Easing, View, Animated, Button, StyleSheet } from 'react-native';
 // bounce, cubic, back(number), elastic(number), ease,
 // quad, sin, linear
 
-let styles = {};
-
 class EasingExample extends React.Component {
   static navigationOptions = () => ({
     title: 'Easing',
@@ -48,7 +46,7 @@ class EasingExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
   },

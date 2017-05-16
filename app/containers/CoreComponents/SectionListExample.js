@@ -1,8 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, SectionList } from 'react-native';
 
-let styles = {};
-
 // SectionList must have data with the following shape:
 let sections = [{ data: [] }, { data: [] }];
 
@@ -74,7 +72,7 @@ class SectionListListExample extends React.Component {
 
 // ItemSeparatorComponent={() => <View style={styles.separator} />}
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   header: {
     padding: 13,
     backgroundColor: '#a3a3a3',

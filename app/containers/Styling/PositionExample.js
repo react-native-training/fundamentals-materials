@@ -2,8 +2,6 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import ExampleTitle from '../../components/ExampleTitle';
 
-let styles = {};
-
 class PositionExample extends React.Component {
   static navigationOptions = () => ({
     title: 'Position',
@@ -35,7 +33,7 @@ class PositionExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   relative: {
     height: 50,
     width: 50,

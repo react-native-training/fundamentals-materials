@@ -6,8 +6,6 @@ import {
   StyleSheet,
 } from 'react-native';
 
-let styles;
-
 const ExampleTitle = ({ title, textStyle }) => {
   return (
     <View style={styles.container}>
@@ -16,7 +14,7 @@ const ExampleTitle = ({ title, textStyle }) => {
   );
 };
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     padding: 10,
     justifyContent: 'center',

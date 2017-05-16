@@ -1,8 +1,6 @@
 import React from 'react';
 import { ActivityIndicator, View, StyleSheet, Text } from 'react-native';
 
-let styles = {};
-
 // <ActivityIndicator />
 // main props ->
 // animating: boolean
@@ -41,7 +39,7 @@ class ActivityIndicatorExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',

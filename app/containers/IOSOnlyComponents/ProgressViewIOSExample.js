@@ -1,8 +1,6 @@
 import React from 'react';
 import { ProgressViewIOS, StyleSheet, Button, View } from 'react-native';
 
-let styles = {};
-
 class ProgressViewIOSExample extends React.Component {
   static navigationOptions = () => ({
     title: 'ProgressViewIOS',
@@ -44,7 +42,7 @@ class ProgressViewIOSExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
 });
 
 export default ProgressViewIOSExample;

@@ -1,7 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, ScrollView } from 'react-native';
-
-let styles = {};
+import { View, StyleSheet, ScrollView } from 'react-native';
 
 class ScrollViewExample extends React.Component {
   static navigationOptions = () => ({
@@ -43,7 +41,7 @@ class ScrollViewExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   contentContainerStyleView: {
     backgroundColor: 'black',
     margin: 20,

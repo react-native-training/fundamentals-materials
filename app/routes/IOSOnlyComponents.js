@@ -4,6 +4,7 @@ import ProgressViewIOSExample from '../containers/IOSOnlyComponents/ProgressView
 import SegmentedControlIOSExample from '../containers/IOSOnlyComponents/SegmentedControlIOSExample';
 import TabBarIOSExample from '../containers/IOSOnlyComponents/TabBarIOSExample';
 import IOSChallengeOne from '../containers/IOSOnlyComponents/ChallengeOne';
+import ActionSheetIOSExample from '../containers/IOSOnlyComponents/ActionSheetIOSExample';
 
 export {
   IOSOnlyComponents,
@@ -12,4 +13,5 @@ export {
   SegmentedControlIOSExample,
   TabBarIOSExample,
   IOSChallengeOne,
+  ActionSheetIOSExample,
 };

@@ -71,13 +71,18 @@ import {
   CPChallengeThree,
 } from './CrossPlatformComponents';
 
-// Android Only Components
+// Android Only Components and APIs
 import {
   AndroidOnlyComponents,
   TouchableNativeFeedbackExample,
+  DatePickerAndroidExample,
+  ProgressBarAndroidExample,
+  TimePickerAndroidExample,
+  ToastAndroidExample,
+  ViewPagerAndroidExample,
 } from './AndroidOnlyComponents';
 
-// iOS Only Components
+// iOS Only Components and APIs
 import {
   IOSOnlyComponents,
   DatePickerIOSExample,
@@ -85,7 +90,25 @@ import {
   SegmentedControlIOSExample,
   TabBarIOSExample,
   IOSChallengeOne,
+  ActionSheetIOSExample,
 } from './IOSOnlyComponents';
+
+// Cross Platform APIs
+import {
+  CrossPlatformAPIs,
+  AlertExample,
+  AppStateExample,
+  AsyncStorageExample,
+  CameraRollExample,
+  DimensionsExample,
+  GeolocationExample,
+  LinkingExample,
+  NetInfoExample,
+  PanResponderExample,
+  ShareExample,
+  CPAPISChallengeOne,
+  CPAPISChallengeTwo,
+} from './CrossPlatformAPIs';
 
 // Animations
 import {
@@ -178,17 +201,38 @@ const RouteConfigs = {
   CPChallengeTwo: { screen: CPChallengeTwo },
   CPChallengeThree: { screen: CPChallengeThree },
 
-  // Android Only Components
+  // Android Only Components and APIs
   AndroidOnlyComponents: { screen: AndroidOnlyComponents },
   TouchableNativeFeedbackExample: { screen: TouchableNativeFeedbackExample },
+  DatePickerAndroidExample: { screen: DatePickerAndroidExample },
+  ProgressBarAndroidExample: { screen: ProgressBarAndroidExample },
+  TimePickerAndroidExample: { screen: TimePickerAndroidExample },
+  ToastAndroidExample: { screen: ToastAndroidExample },
+  ViewPagerAndroidExample: { screen: ViewPagerAndroidExample },
 
-  // iOS Only Components
+  // iOS Only Components and APIs
   IOSOnlyComponents: { screen: IOSOnlyComponents },
   DatePickerIOSExample: { screen: DatePickerIOSExample },
   ProgressViewIOSExample: { screen: ProgressViewIOSExample },
   SegmentedControlIOSExample: { screen: SegmentedControlIOSExample },
   TabBarIOSExample: { screen: TabBarIOSExample },
   IOSChallengeOne: { screen: IOSChallengeOne },
+  ActionSheetIOSExample: { screen: ActionSheetIOSExample },
+
+  // Cross platform APIs
+  CrossPlatformAPIs: { screen: CrossPlatformAPIs },
+  AlertExample: { screen: AlertExample },
+  AppStateExample: { screen: AppStateExample },
+  AsyncStorageExample: { screen: AsyncStorageExample },
+  CameraRollExample: { screen: CameraRollExample },
+  DimensionsExample: { screen: DimensionsExample },
+  GeolocationExample: { screen: GeolocationExample },
+  LinkingExample: { screen: LinkingExample },
+  NetInfoExample: { screen: NetInfoExample },
+  PanResponderExample: { screen: PanResponderExample },
+  ShareExample: { screen: ShareExample },
+  CPAPISChallengeOne: { screen: CPAPISChallengeOne },
+  CPAPISChallengeTwo: { screen: CPAPISChallengeTwo },
 
   // Animations
   Animations: { screen: Animations },

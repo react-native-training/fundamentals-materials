@@ -8,8 +8,6 @@ const data = [
   { sport: 'Basketball' }, { sport: 'Baseball' }, { sport: 'Hockey' }, { sport: 'Tennis' },
 ];
 
-let styles = {};
-
 class RefreshControlExample extends React.Component {
   static navigationOptions = () => ({
     title: 'RefreshControl',
@@ -61,7 +59,7 @@ class RefreshControlExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   listItem: {
     padding: 15,
     fontWeight: 'bold',

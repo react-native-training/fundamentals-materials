@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
-let styles = {};
-
 class ColorsExample extends React.Component {
   static navigationOptions = () => ({
     title: 'Colors',
@@ -28,7 +26,7 @@ class ColorsExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   text: {
     margin: 15,
     fontSize: 16,

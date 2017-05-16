@@ -1,8 +1,6 @@
 import React from 'react';
 import { TouchableHighlight, Text, Easing, View, Animated, Button, StyleSheet } from 'react-native';
 
-let styles = {};
-
 class CreateAnimatedComponent extends React.Component {
   static navigationOptions = () => ({
     title: 'CreateAnimatedComponent',
@@ -49,7 +47,7 @@ class CreateAnimatedComponent extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
   },

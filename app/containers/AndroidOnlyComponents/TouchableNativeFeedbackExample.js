@@ -1,8 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableNativeFeedback } from 'react-native';
 
-let styles = {};
-
 class TouchableNativeFeedbackExample extends React.Component {
   static navigationOptions = () => ({
     title: 'TouchableNativeFeedback',
@@ -23,7 +21,7 @@ class TouchableNativeFeedbackExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   button: {
     margin: 10,
     height: 60,

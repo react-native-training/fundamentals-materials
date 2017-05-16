@@ -1,8 +1,6 @@
 import React from 'react';
 import { DatePickerIOS, StyleSheet, Text, View } from 'react-native';
 
-let styles = {};
-
 class DatePickerIOSExample extends React.Component {
   static navigationOptions = () => ({
     title: 'DatePickerIOS',
@@ -35,7 +33,7 @@ class DatePickerIOSExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
 });
 
 export default DatePickerIOSExample;

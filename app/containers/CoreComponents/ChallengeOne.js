@@ -1,9 +1,8 @@
 import React from 'react';
 import { Text, View, StyleSheet, ScrollView } from 'react-native';
 
-let styles = {};
-
 // Challenge: Create a basic ScrollView with child View and Text elements
+// Advanced: Create a text element that toggles a TextInput when clicked
 
 class ChallengeOne extends React.Component {
   static navigationOptions = () => ({
@@ -15,7 +14,7 @@ class ChallengeOne extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
 });
 
 export default ChallengeOne;

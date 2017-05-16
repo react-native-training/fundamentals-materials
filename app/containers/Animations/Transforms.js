@@ -13,8 +13,6 @@ import { StyleSheet, Animated, Button, View } from 'react-native';
 // {rotateZ: string}, {scale: number}, {scaleX: number}, {scaleY: number}
 // {translateX: number}, {translateY: number}, {skewX: string}, {skewY: string}]
 
-let styles = {};
-
 class Transforms extends React.Component {
   static navigationOptions = () => ({
     title: 'Transforms',
@@ -93,7 +91,7 @@ class Transforms extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   scaled: {
     width: 75,
     height: 75,

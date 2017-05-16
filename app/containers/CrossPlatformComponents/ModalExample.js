@@ -2,8 +2,6 @@ import React from 'react';
 import { StyleSheet, View, Modal, Text, Button } from 'react-native';
 import ExampleTitle from '../../components/ExampleTitle';
 
-let styles = {};
-
 class ModalExample extends React.Component {
   static navigationOptions = () => ({
     title: 'Modal',
@@ -42,7 +40,7 @@ class ModalExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',

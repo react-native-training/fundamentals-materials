@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
-let styles = {};
-
 class ZIndex extends React.Component {
   static navigationOptions = () => ({
     title: 'zIndex',
@@ -20,7 +18,7 @@ class ZIndex extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   text: {
     color: 'white',
   },

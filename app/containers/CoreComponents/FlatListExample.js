@@ -1,8 +1,6 @@
 import React from 'react';
 import { FlatList, Text, View, StyleSheet, ScrollView } from 'react-native';
 
-let styles = {};
-
 const people = [
   { name: 'Chris J.', age: 22 },
   { name: 'Michelle H.', age: 44 },
@@ -36,7 +34,7 @@ class FlatListExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
 });
 
 export default FlatListExample;

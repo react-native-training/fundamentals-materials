@@ -1,8 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet, ScrollView } from 'react-native';
 
-let styles = {};
-
 // The most basic way of showing lists in React Native
 // is to simply map through a list of items and return
 // an array of components.
@@ -46,7 +44,7 @@ class MapListExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
 });
 
 export default MapListExample;

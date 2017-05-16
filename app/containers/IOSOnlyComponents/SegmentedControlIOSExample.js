@@ -1,8 +1,6 @@
 import React from 'react';
 import { SegmentedControlIOS, StyleSheet, Text, View } from 'react-native';
 
-let styles = {};
-
 const values = ['People', 'Places'];
 
 const people = ['Jim', 'Ashley', 'Rob', 'Janice'];
@@ -47,7 +45,7 @@ class SegmentedControlIOSExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     margin: 15,
   },

@@ -4,7 +4,7 @@ import ListItem from '../../components/ListItem';
 
 class AndroidOnlyComponents extends React.Component {
   static navigationOptions = () => ({
-    title: 'Android Only Components',
+    title: 'Android Only Components + APIs',
   });
 
   render() {
@@ -13,6 +13,26 @@ class AndroidOnlyComponents extends React.Component {
         <ListItem
           title="TouchableNativeFeedback"
           onPress={() => this.props.navigation.navigate('TouchableNativeFeedbackExample')}
+        />
+        <ListItem
+          title="ViewPagerAndroid"
+          onPress={() => this.props.navigation.navigate('ViewPagerAndroidExample')}
+        />
+        <ListItem
+          title="ProgressBarAndroid"
+          onPress={() => this.props.navigation.navigate('ProgressBarAndroidExample')}
+        />
+        <ListItem
+          title="DatePickerAndroid"
+          onPress={() => this.props.navigation.navigate('DatePickerAndroidExample')}
+        />
+        <ListItem
+          title="TimePickerAndroid"
+          onPress={() => this.props.navigation.navigate('TimePickerAndroidExample')}
+        />
+        <ListItem
+          title="ToastAndroid"
+          onPress={() => this.props.navigation.navigate('ToastAndroidExample')}
         />
       </ScrollView>
     );

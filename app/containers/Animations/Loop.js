@@ -6,8 +6,7 @@ import { Easing, View, Animated, Button, StyleSheet } from 'react-native';
 // {rotateZ: string}, {scale: number}, {scaleX: number}, {scaleY: number}
 // {translateX: number}, {translateY: number}, {skewX: string}, {skewY: string}]
 
-let styles = {};
-const reactLogo = require('./assets/react.png')
+const reactLogo = require('./assets/react.png');
 
 class Loop extends React.Component {
   static navigationOptions = () => ({
@@ -51,7 +50,7 @@ class Loop extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   image: {
     width: 200,
     height: 200,

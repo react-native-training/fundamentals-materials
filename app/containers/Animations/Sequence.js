@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, Animated, View, Button, StyleSheet } from 'react-native';
+import { Animated, View, Button, StyleSheet } from 'react-native';
 
 /* Can Animate any of the following:
 *  Animated.Image
@@ -7,12 +7,6 @@ import { Dimensions, Animated, View, Button, StyleSheet } from 'react-native';
 *  Animated.Text
 *  Animated.View
 */
-
-let styles = {};
-
-const { width, height } = Dimensions.get('window');
-console.log({ width })
-console.log({ height })
 
 class Sequence extends React.Component {
   static navigationOptions = () => ({
@@ -74,7 +68,7 @@ class Sequence extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
   },

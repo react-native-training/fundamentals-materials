@@ -1,8 +1,6 @@
 import React from 'react';
 import { FlatList, View, StyleSheet } from 'react-native';
 
-let styles = {};
-
 // Challenge: Implement a FlatList with the provided array of sights
 // data. Show a View with two child Text components that display the
 // type and name of the sight. Feel free to provide any basic styling
@@ -29,7 +27,7 @@ class ChallengeTwo extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
 });
 
 export default ChallengeTwo;

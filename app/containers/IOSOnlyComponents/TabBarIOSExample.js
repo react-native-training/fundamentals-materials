@@ -4,8 +4,6 @@ import { TabBarIOS, StyleSheet, Text, View } from 'react-native';
 const chat = require('./assets/chat.png');
 const elephant = require('./assets/elephant.png');
 
-let styles = {};
-
 const PageOne = () => (
   <View style={[styles.container, { backgroundColor: '#acacac' }]}>
     <Text style={styles.text}>Page One</Text>
@@ -63,7 +61,7 @@ class TabBarIOSExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',

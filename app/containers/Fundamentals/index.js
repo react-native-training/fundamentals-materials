@@ -2,8 +2,6 @@ import React from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import ListItem from '../../components/ListItem';
 
-let styles;
-
 export default class Fundamentals extends React.Component {
   static navigationOptions = {
     title: 'React Fundamentals',
@@ -59,7 +57,7 @@ export default class Fundamentals extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
   },
 });

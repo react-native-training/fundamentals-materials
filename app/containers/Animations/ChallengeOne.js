@@ -6,8 +6,6 @@ import { View, Animated, Button, StyleSheet } from 'react-native';
 
 // Advanced: Use interpolation
 
-let styles = {};
-
 class ChallengeOne extends React.Component {
   static navigationOptions = () => ({
     title: 'Challenge One',
@@ -21,10 +19,7 @@ class ChallengeOne extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
-  block: {
-    backgroundColor: '#FF9900',
-  },
+const styles = StyleSheet.create({
 });
 
 export default ChallengeOne;

@@ -30,6 +30,10 @@ class IOSOnlyComponents extends React.Component {
           title="Challenge One"
           onPress={() => this.props.navigation.navigate('IOSChallengeOne')}
         />
+        <ListItem
+          title="ActionSheetIOS"
+          onPress={() => this.props.navigation.navigate('ActionSheetIOSExample')}
+        />
       </ScrollView>
     );
   }

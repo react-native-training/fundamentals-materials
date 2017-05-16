@@ -1,8 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
-let styles = {};
-
 class ViewExample extends React.Component {
   static navigationOptions = () => ({
     title: 'View',
@@ -50,7 +48,7 @@ class ViewExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   viewContainer: {
     margin: 20,
     borderColor: '#000',

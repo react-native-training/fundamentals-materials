@@ -1,8 +1,6 @@
 import React from 'react';
 import { Text, ScrollView, StyleSheet } from 'react-native';
 
-let styles = {};
-
 class TextComponentExample extends React.Component {
   static navigationOptions = () => ({
     title: 'Text',
@@ -39,7 +37,7 @@ class TextComponentExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   text: {
     margin: 15,
     textAlign: 'center',

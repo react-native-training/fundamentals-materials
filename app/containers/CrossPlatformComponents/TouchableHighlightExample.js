@@ -2,8 +2,6 @@ import React from 'react';
 import { Text, StyleSheet, View, TouchableHighlight } from 'react-native';
 import ExampleTitle from '../../components/ExampleTitle';
 
-let styles = {};
-
 class TouchableHighlightExample extends React.Component {
   static navigationOptions = () => ({
     title: 'TouchableHighlight',
@@ -35,7 +33,7 @@ class TouchableHighlightExample extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   button: {
     height: 55,
     margin: 10,

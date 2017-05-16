@@ -1,15 +1,30 @@
 import React from 'react';
-import { View, ScrollView, StyleSheet } from 'react-native';
+import { View, ScrollView, StyleSheet, Linking } from 'react-native';
 import ListItem from './components/ListItem';
 
 import Logo from './components/Logo';
-
-let styles;
 
 export default class Subjects extends React.Component {
   static navigationOptions = {
     headerTitle: <Logo />,
   }
+
+  // componentDidMount() {
+  //   console.log('componentDidMount');
+  //   Linking.addEventListener('url', this.handleDeepLink);
+  // }
+
+  // componentWillUnmount() {
+  //   console.log('componentWillUnmount');
+  //   Linking.removeEventListener('url', this.handleDeepLink);
+  // }
+
+  // handleDeepLink = (e) => {
+  //   // deeplink://
+  //   const { navigate } = this.props.navigation;
+  //   const route = e.url.replace(/.*?:\/\//g, '');
+  //   navigate(route);
+  // }
 
   render() {
     return (
@@ -32,12 +47,16 @@ export default class Subjects extends React.Component {
             title="Cross Platform Components"
           />
           <ListItem
+            onPress={() => this.props.navigation.navigate('CrossPlatformAPIs')}
+            title="Cross Platform APIs"
+          />
+          <ListItem
             onPress={() => this.props.navigation.navigate('IOSOnlyComponents')}
-            title="IOS Specific Components"
+            title="IOS Specific Components + APIs"
           />
           <ListItem
             onPress={() => this.props.navigation.navigate('AndroidOnlyComponents')}
-            title="Android Specific Components"
+            title="Android Specific Components + APIs"
           />
           <ListItem
             onPress={() => this.props.navigation.navigate('Animations')}
@@ -57,7 +76,7 @@ export default class Subjects extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
   },
 });

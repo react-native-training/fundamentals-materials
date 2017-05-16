@@ -2,8 +2,6 @@ import React from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 import ExampleTitle from '../../components/ExampleTitle';
 
-let styles = {};
-
 class MarginVSPadding extends React.Component {
   static navigationOptions = () => ({
     title: 'Margin vs Padding',
@@ -29,7 +27,7 @@ class MarginVSPadding extends React.Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   margin: {
     backgroundColor: 'red',
     marginLeft: 10,

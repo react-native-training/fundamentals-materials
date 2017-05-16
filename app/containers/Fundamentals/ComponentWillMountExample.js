@@ -1,10 +1,8 @@
 import React from 'react';
-import { Text, View, ScrollView, StyleSheet } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 
 import ComponentDivider from '../../components/ComponentDivider';
 import ExampleTitle from '../../components/ExampleTitle';
-
-let styles;
 
 export default class ComponentWillMountExample extends React.Component {
   static navigationOptions = {
@@ -30,7 +28,7 @@ export default class ComponentWillMountExample extends React.Component {
   render() {
     return (
       <View>
-        <ScrollView contentContainerStyle={styles.container}>
+        <ScrollView>
           <ComponentDivider>
             <ExampleTitle title="componentWillMount example" />
             <Text>{this.state.tick}</Text>
@@ -40,8 +38,3 @@ export default class ComponentWillMountExample extends React.Component {
     );
   }
 }
-
-styles = StyleSheet.create({
-  container: {
-  },
-});
