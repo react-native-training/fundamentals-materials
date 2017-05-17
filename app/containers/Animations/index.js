@@ -50,6 +50,14 @@ class Animations extends React.Component {
           title="Challenge Two"
           onPress={() => this.props.navigation.navigate('AnimationChallengeTwo')}
         />
+        <ListItem
+          title="Spring"
+          onPress={() => this.props.navigation.navigate('Spring')}
+        />
+        <ListItem
+          title="Stagger"
+          onPress={() => this.props.navigation.navigate('Stagger')}
+        />
       </ScrollView>
     );
   }

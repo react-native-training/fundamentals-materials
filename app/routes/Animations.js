@@ -8,6 +8,8 @@ import Parallel from '../containers/Animations/Parallel';
 import Loop from '../containers/Animations/Loop';
 import CreateAnimatedComponent from '../containers/Animations/CreateAnimatedComponent';
 import Sequence from '../containers/Animations/Sequence';
+import Spring from '../containers/Animations/Spring';
+import Stagger from '../containers/Animations/Stagger';
 
 // Challenges
 import AnimationChallengeOne from '../containers/Animations/ChallengeOne';
@@ -25,4 +27,6 @@ export {
   Sequence,
   AnimationChallengeOne,
   AnimationChallengeTwo,
+  Spring,
+  Stagger,
 };

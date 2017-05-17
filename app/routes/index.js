@@ -123,6 +123,8 @@ import {
   Sequence,
   AnimationChallengeOne,
   AnimationChallengeTwo,
+  Spring,
+  Stagger,
 } from './Animations';
 
 // Styling
@@ -246,6 +248,8 @@ const RouteConfigs = {
   Sequence: { screen: Sequence },
   AnimationChallengeOne: { screen: AnimationChallengeOne },
   AnimationChallengeTwo: { screen: AnimationChallengeTwo },
+  Spring: { screen: Spring },
+  Stagger: { screen: Stagger },
 
   // Styling
   Styling: { screen: Styling },
