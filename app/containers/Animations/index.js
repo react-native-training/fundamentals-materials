@@ -4,7 +4,7 @@ import ListItem from '../../components/ListItem';
 
 class Animations extends React.Component {
   static navigationOptions = () => ({
-    title: 'Core Components',
+    title: 'Animations',
   });
 
   render() {

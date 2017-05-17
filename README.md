@@ -1,5 +1,7 @@
 # Training Materials for React Native Fundamentals Workshop
 
+![](http://i.imgur.com/5d12I8L.png)
+
 ## What is covered in this project:
 
 ES2015 Review   
