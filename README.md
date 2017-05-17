@@ -5,9 +5,10 @@
 ES2015 Review   
 React Fundamentals   
 Core Components   
-Cross Platform Components   
-iOS Specific Components   
-Android Specific Components   
+Cross Platform Components
+Cross Platform APIs   
+iOS Specific Components and APIs   
+Android Specific Components and APIs   
 Animations   
 Styling   
 Flexbox   
