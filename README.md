@@ -2,15 +2,16 @@
 
 ## What is covered in this project:
 
-⭐️ ️ES2015 Review   
-⭐️ ️React Fundamentals   
-⭐️ ️Core Components   
-⭐️ Cross Platform Components   
-⭐️ ️iOS Specific Components   
-⭐️ ️Android Specific Components   
-⭐️ ️React Navigation   
-⭐️ ️Code Push   
-... More coming   
+ES2015 Review   
+React Fundamentals   
+Core Components   
+Cross Platform Components   
+iOS Specific Components   
+Android Specific Components   
+Animations   
+Styling   
+Flexbox   
+   
 
 ## To get started:
 
