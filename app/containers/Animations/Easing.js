@@ -10,7 +10,7 @@ import { Easing, View, Animated, Button, StyleSheet } from 'react-native';
 
 // Easings:
 // bounce, cubic, back(number), elastic(number), ease,
-// quad, sin, linear
+// quad, sin, linear, circle, bezier(x1, y1, x2, y2), exp, in, inOut(ease), out(ease)
 
 class EasingExample extends React.Component {
   static navigationOptions = () => ({
@@ -26,7 +26,7 @@ class EasingExample extends React.Component {
       {
         toValue: 0,
         duration: 1200,
-        easing: Easing.bounce,
+        easing: Easing.in,
       },
     ).start();
   }
