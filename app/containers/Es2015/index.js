@@ -20,7 +20,7 @@ class Es2015 extends React.Component {
           onPress={() => this.props.navigation.navigate('ArrowFunctions')}
         />
         <ListItem
-          title="Default Arguments"
+          title="Default Parameters"
           onPress={() => this.props.navigation.navigate('DefaultArguments')}
         />
         <ListItem
@@ -28,8 +28,8 @@ class Es2015 extends React.Component {
           onPress={() => this.props.navigation.navigate('ArraySpreadRest')}
         />
         <ListItem
-          title="Object Spread & Rest"
-          onPress={() => this.props.navigation.navigate('ObjectSpreadRest')}
+          title="Object Spread"
+          onPress={() => this.props.navigation.navigate('ObjectSpread')}
         />
         <ListItem
           title="Array Destructuring"

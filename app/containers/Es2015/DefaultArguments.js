@@ -8,7 +8,7 @@ const examples = {};
 
 class DefaultArguments extends React.Component {
   static navigationOptions = () => ({
-    title: 'DefaultArguments',
+    title: 'Default Parameters',
   });
 
   render() {

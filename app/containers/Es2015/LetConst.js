@@ -13,13 +13,13 @@ class LetConst extends React.Component {
 
   render() {
 
-    // let a = 10;
+    let a = 10;
 
-    // a = 20; // a === 20
+    a = 20; // a === 20
 
-    // a = {};
+    a = {};
 
-    // console.log('a: ', a); // {}
+    console.log('a: ', a); // {}
 
     // const b = 20;
 
@@ -47,7 +47,7 @@ class LetConst extends React.Component {
 
     // b = 20; // error, a is read only;
 
-    const a = 20;
+    // const a = 20;
 
     // a = 20; // error, a is read only;
 

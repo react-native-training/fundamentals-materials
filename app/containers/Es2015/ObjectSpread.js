@@ -6,16 +6,27 @@ import ExampleTitle from '../../components/ExampleTitle';
 
 let examples = {};
 
-class ObjectSpreadRest extends React.Component {
+class ObjectSpread extends React.Component {
   static navigationOptions = () => ({
-    title: 'Object Spread and Rest',
+    title: 'Object Spread',
   });
 
   render() {
+    const obj = {
+      name: 'Jim',
+      age: 22,
+      kids: 2,
+      profession: 'programmer',
+      info: {
+        hairColor: 'brown',
+        height: "6'1",
+      },
+    };
+
     return (
       <ScrollView>
         <ExampleTitle
-          title="ES5"
+          title="Object Spread"
         />
         <SyntaxHighlighter>
           {examples.es5}
@@ -35,12 +46,25 @@ class ObjectSpreadRest extends React.Component {
 examples = {
   es5: `
 
+  const person = { name: 'Jim', age: 22 };
+
+  const Jim = Object.assign({}, person, { occupation: 'Programmer' } )
+
+  console.log('Jim:', Jim);
+
+
   `,
 
   es2015: `
 
-  
+  const person = { name: 'Jim', age: 22 };
+
+  const Jim = { ...person, occupation: 'Programmer' };
+
+  console.log('Jim:', Jim);
+
+
   `,
 };
 
-export default ObjectSpreadRest;
+export default ObjectSpread;
