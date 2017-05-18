@@ -125,6 +125,7 @@ import {
   AnimationChallengeTwo,
   Spring,
   Stagger,
+  BlankSlateAnimations,
 } from './Animations';
 
 // Styling
@@ -250,6 +251,7 @@ const RouteConfigs = {
   AnimationChallengeTwo: { screen: AnimationChallengeTwo },
   Spring: { screen: Spring },
   Stagger: { screen: Stagger },
+  BlankSlateAnimations: { screen: BlankSlateAnimations },
 
   // Styling
   Styling: { screen: Styling },

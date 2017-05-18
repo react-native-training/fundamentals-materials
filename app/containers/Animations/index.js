@@ -11,6 +11,10 @@ class Animations extends React.Component {
     return (
       <ScrollView>
         <ListItem
+          title="BlankSlateAnimation"
+          onPress={() => this.props.navigation.navigate('BlankSlateAnimations')}
+        />
+        <ListItem
           title="Timing"
           onPress={() => this.props.navigation.navigate('Timing')}
         />

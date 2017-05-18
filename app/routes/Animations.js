@@ -10,6 +10,7 @@ import CreateAnimatedComponent from '../containers/Animations/CreateAnimatedComp
 import Sequence from '../containers/Animations/Sequence';
 import Spring from '../containers/Animations/Spring';
 import Stagger from '../containers/Animations/Stagger';
+import BlankSlateAnimations from '../containers/Animations/BlankSlate';
 
 // Challenges
 import AnimationChallengeOne from '../containers/Animations/ChallengeOne';
@@ -29,4 +30,5 @@ export {
   AnimationChallengeTwo,
   Spring,
   Stagger,
+  BlankSlateAnimations,
 };
