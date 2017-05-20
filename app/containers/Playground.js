@@ -6,17 +6,18 @@ class App extends React.Component {
     title: 'Playground',
   }
 
-  render() {
-    let Button = TouchableHighlight;
-    if (Platform.OS === 'android') {
-      Button = TouchableNativeFeedback;
-    }
+  state = {
+    sport: 'basketball'
+  }
 
+  render() {
+    let data = [{ name: 'chris', sport: 'baseball' }, { name: 'James', sport: 'basketball' }]
+    data = data.filter(d => d.sport === this.state.sport)
     return (
       <View>
-        <Button onPress={console.log}>
-          <Text>Hello!</Text>
-        </Button>
+        {
+          data.map(d => <Text>{d.name}</Text>)
+        }
       </View>
     );
   }
