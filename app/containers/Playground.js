@@ -1,22 +1,24 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Platform, TouchableHighlight, TouchableNativeFeedback, View, Text } from 'react-native';
 
 class App extends React.Component {
-  state = { loggedIn: false }
-
-  login = () => {
-    this.setState({ loggedIn: true })
+  static navigationOptions = {
+    title: 'Playground',
   }
 
   render() {
-    const { loggedIn } = this.state;
+    let Button = TouchableHighlight;
+    if (Platform.OS === 'android') {
+      Button = TouchableNativeFeedback;
+    }
 
     return (
       <View>
-        { loggedIn && <Text>Logged In</Text> }
-        { !loggedIn && <Text onPress={this.login}>Please Log In</Text> }
+        <Button onPress={console.log}>
+          <Text>Hello!</Text>
+        </Button>
       </View>
-    )
+    );
   }
 }
 
