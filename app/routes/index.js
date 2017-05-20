@@ -144,6 +144,9 @@ import {
   Flexbox,
 } from './Flexbox';
 
+// Playground
+import Playground from '../containers/Playground';
+
 const RouteConfigs = {
   // Home list
   Subjects: { screen: Subjects },
@@ -264,6 +267,9 @@ const RouteConfigs = {
 
   // Flexbox
   Flexbox: { screen: Flexbox },
+
+  // Playground
+  Playground: { screen: Playground },
 };
 
 const StackNavigatorConfig = {

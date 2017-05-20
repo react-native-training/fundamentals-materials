@@ -70,6 +70,10 @@ export default class Subjects extends React.Component {
             onPress={() => this.props.navigation.navigate('Flexbox')}
             title="Flexbox"
           />
+          <ListItem
+            onPress={() => this.props.navigation.navigate('Playground')}
+            title="Playground"
+          />
         </ScrollView>
       </View>
     );
