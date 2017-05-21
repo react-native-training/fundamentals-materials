@@ -1,38 +1,36 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import PropTypes from 'prop-types';
 
-/*class Person extends React.Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired,
+class App extends React.Component {
+  state = {
+    tick: 0,
+  }
+
+  tick = () => {
+    this.setState({
+      tick: this.state.tick + 1,
+    });
   }
 
   render() {
     return (
-      <View>
-        <Text>{this.props.name}</Text>
-      </View>
+      <Ticker onPress={this.tick} tick={this.state.tick} />
     );
   }
-};*/
-
-
-const Person = ({ person }) => (
-  <View>
-    <Text>{person.name}</Text>
-  </View>
-);
-
-Person.propTypes = {
-  person: PropTypes.object.isRequired,
 };
 
-class App extends React.Component {
-  static navigationOptions = {
-    title: 'Playground',
+class Ticker extends React.Component {
+  state = {
+    greeting: `Number: ${this.props.tick}`,
+  }
+  componentWillReceiveProps(nextProps) {
+    console.log('nextProps:', nextProps)
+    if (this.props.age !== nextProps.tick) {
+      this.setState({ greeting: `Number: ${this.props.tick}` });
+    }
   }
   render() {
-    return <Person person={{ name: 'Bob' }} />;
+    return <Text onPress={this.props.onPress}>{this.state.greeting}</Text>;
   }
 }
 

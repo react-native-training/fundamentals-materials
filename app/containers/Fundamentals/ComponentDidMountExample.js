@@ -18,7 +18,6 @@ class ComponentDidMountExample extends React.Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount called...');
     setTimeout(() => {
       this.setState({
         tick: this.state.tick + 1,

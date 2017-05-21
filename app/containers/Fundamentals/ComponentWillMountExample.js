@@ -9,20 +9,8 @@ export default class ComponentWillMountExample extends React.Component {
     title: 'componentWillMount Example',
   }
 
-  state = {
-    tick: 1,
-  }
-
   componentWillMount() {
-    this.timeOut = setTimeout(() => {
-      this.setState({
-        tick: this.state.tick + 1,
-      });
-    }, 2000);
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.timeOut);
+    this.setState({ startDateTime: new Date(Date.now())});
   }
 
   render() {
@@ -31,7 +19,7 @@ export default class ComponentWillMountExample extends React.Component {
         <ScrollView>
           <ComponentDivider>
             <ExampleTitle title="componentWillMount example" />
-            <Text>{this.state.tick}</Text>
+            <Text>{this.state.startDateTime.toLocaleString()}</Text>
           </ComponentDivider>
         </ScrollView>
       </View>
