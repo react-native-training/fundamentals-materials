@@ -1,25 +1,38 @@
 import React from 'react';
-import { Platform, TouchableHighlight, TouchableNativeFeedback, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
+import PropTypes from 'prop-types';
+
+/*class Person extends React.Component {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+  }
+
+  render() {
+    return (
+      <View>
+        <Text>{this.props.name}</Text>
+      </View>
+    );
+  }
+};*/
+
+
+const Person = ({ person }) => (
+  <View>
+    <Text>{person.name}</Text>
+  </View>
+);
+
+Person.propTypes = {
+  person: PropTypes.object.isRequired,
+};
 
 class App extends React.Component {
   static navigationOptions = {
     title: 'Playground',
   }
-
-  state = {
-    sport: 'basketball'
-  }
-
   render() {
-    let data = [{ name: 'chris', sport: 'baseball' }, { name: 'James', sport: 'basketball' }]
-    data = data.filter(d => d.sport === this.state.sport)
-    return (
-      <View>
-        {
-          data.map(d => <Text>{d.name}</Text>)
-        }
-      </View>
-    );
+    return <Person person={{ name: 'Bob' }} />;
   }
 }
 
