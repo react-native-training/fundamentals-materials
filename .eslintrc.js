@@ -21,6 +21,7 @@ module.exports = {
     "parser": "babel-eslint",
     "globals": {
         "navigator": true,
-        "alert": true
+        "alert": true,
+        "fetch": true
     }
 };
