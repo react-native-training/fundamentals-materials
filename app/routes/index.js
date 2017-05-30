@@ -114,6 +114,7 @@ import {
 import {
   Animations,
   Timing,
+  AnimatedXY,
   Easing,
   Interpolation,
   Parallel,
@@ -243,6 +244,7 @@ const RouteConfigs = {
   // Animations
   Animations: { screen: Animations },
   Timing: { screen: Timing },
+  AnimatedXY: { screen: AnimatedXY },
   Easing: { screen: Easing },
   Transforms: { screen: Transforms },
   Interpolation: { screen: Interpolation },

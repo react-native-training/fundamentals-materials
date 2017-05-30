@@ -23,6 +23,10 @@ class Animations extends React.Component {
           onPress={() => this.props.navigation.navigate('Easing')}
         />
         <ListItem
+          title="AnimatedXY"
+          onPress={() => this.props.navigation.navigate('AnimatedXY')}
+        />
+        <ListItem
           title="Interpolation"
           onPress={() => this.props.navigation.navigate('Interpolation')}
         />

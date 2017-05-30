@@ -2,6 +2,7 @@
 import Animations from '../containers/Animations';
 import Easing from '../containers/Animations/Easing';
 import Timing from '../containers/Animations/Timing';
+import AnimatedXY from '../containers/Animations/AnimatedXY';
 import Transforms from '../containers/Animations/Transforms';
 import Interpolation from '../containers/Animations/Interpolation';
 import Parallel from '../containers/Animations/Parallel';
@@ -19,6 +20,7 @@ import AnimationChallengeTwo from '../containers/Animations/ChallengeTwo';
 export {
   Animations,
   Timing,
+  AnimatedXY,
   Transforms,
   Interpolation,
   Parallel,
