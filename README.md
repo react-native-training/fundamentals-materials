@@ -1,3 +1,6 @@
+Chek out [ReactNative.training](http://reactnative.training/) and contact us if you would like us to come to your company and deliver a tailored training experience.
+
+
 # Training Materials for React Native Fundamentals Workshop
 
 ![](http://i.imgur.com/5d12I8L.png)
