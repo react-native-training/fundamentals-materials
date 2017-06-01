@@ -34,10 +34,10 @@ class ProgressBarAndroidExample extends React.Component {
           styleAttr="Horizontal"
           progress={this.state.progress}
         />
-        <ProgressBarAndroid
+        {/*<ProgressBarAndroid
           styleAttr="Inverse"
           color="rgb(255, 153, 0)"
-        />
+        />*/}
         <View>
           <Button onPress={this.fakeFetchProgress} title="Fetch Data" />
         </View>
