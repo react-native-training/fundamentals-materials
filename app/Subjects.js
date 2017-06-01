@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ScrollView, StyleSheet, Linking } from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
 import ListItem from './components/ListItem';
 
 import Logo from './components/Logo';

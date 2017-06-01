@@ -1,14 +1,16 @@
 import React from 'react';
-import { View, Text, ScrollView, StyleSheet } from 'react-native';
+import { Platform, View, Text, ScrollView, StyleSheet } from 'react-native';
+
+const ZIndexTitle = Platform.OS === 'ios' ? 'Zindex' : 'Elevation'
 
 class ZIndex extends React.Component {
   static navigationOptions = () => ({
-    title: 'zIndex',
+    title: ZIndexTitle,
   });
 
   render() {
     return (
-      <ScrollView>
+      <ScrollView contentContainerStyle={{ flex: 1 }}>
         {/*<Text style={{ backgroundColor: 'transparent', zIndex: 10, marginLeft: 150 }}>Hello</Text>*/}
         <View style={styles.noZindex}><Text style={styles.text}>No zIndex (first)</Text></View>
         <View style={styles.zIndex2}><Text style={styles.text}>zIndex 2 (second)</Text></View>
@@ -38,7 +40,14 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue',
     position: 'absolute',
     padding: 20,
-    zIndex: 1,
+    ...Platform.select({
+      ios: {
+        zIndex: 1,
+      },
+      android: {
+        elevation: 1,
+      },
+    }),
   },
   zIndex2: {
     left: 80,
@@ -48,7 +57,14 @@ const styles = StyleSheet.create({
     backgroundColor: 'purple',
     position: 'absolute',
     padding: 20,
-    zIndex: 2,
+    ...Platform.select({
+      ios: {
+        zIndex: 2,
+      },
+      android: {
+        elevation: 2,
+      },
+    }),
   },
 });
 

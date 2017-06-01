@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { Platform, ScrollView } from 'react-native';
 import ListItem from '../../components/ListItem';
 
 class Styling extends React.Component {
@@ -8,6 +8,7 @@ class Styling extends React.Component {
   });
 
   render() {
+    const ZIndexTitle = Platform.OS === 'ios' ? 'Zindex' : 'Elevation'
     return (
       <ScrollView>
         <ListItem
@@ -31,7 +32,7 @@ class Styling extends React.Component {
           onPress={() => this.props.navigation.navigate('Position')}
         />
         <ListItem
-          title="Z Index"
+          title={ZIndexTitle}
           onPress={() => this.props.navigation.navigate('ZIndex')}
         />
       </ScrollView>
