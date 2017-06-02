@@ -13,10 +13,10 @@ class DimensionsExample extends React.Component {
     return (
       <ScrollView>
         <ExampleTitle
-          title={`Height: ${width}`}
+          title={`Height: ${height}`}
         />
         <ExampleTitle
-          title={`Width: ${height}`}
+          title={`Width: ${width}`}
         />
         <View style={styles.box} />
       </ScrollView>
