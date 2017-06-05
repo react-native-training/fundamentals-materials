@@ -12,7 +12,7 @@ const Logo = () => (
   <View style={{ width, height }}>
     <Image
       style={{ width, height }}
-      source={require('../img/logo.png')}
+      source={require('../../assets/img/logo.png')}
     />
   </View>
 );
