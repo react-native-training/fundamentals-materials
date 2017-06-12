@@ -1,6 +1,11 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
 
+// To enable geolocation in Android:
+// open android/app/src/main/AndroidManifest.xml
+// set: <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+// This has already been done in the project.
+
 class GeolocationExample extends React.Component {
   static navigationOptions = () => ({
     title: 'Geolocation',
@@ -14,11 +19,11 @@ class GeolocationExample extends React.Component {
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(
       (position) => {
+        console.log('position:', position)
         const initialPosition = position;
         this.setState({ initialPosition });
       },
-      (error) => alert(JSON.stringify(error)),
-      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
+      (error) => alert(JSON.stringify(error))
     );
     this.watchID = navigator.geolocation.watchPosition((position) => {
       const lastPosition = position;
