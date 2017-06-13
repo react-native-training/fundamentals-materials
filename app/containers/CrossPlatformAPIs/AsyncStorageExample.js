@@ -17,29 +17,10 @@ class AsyncStorageExample extends React.Component {
     dataArray: [],
   }
 
-  // componentDidMount() {
-  //   console.log('componentDidMount in AsyncStorageExample');
-  //   AsyncStorage.getItem(STORAGE_KEY)
-  //     .then(d => {
-  //       console.log(STORAGE_KEY, d);
-  //       this.setState({
-  //         data: d,
-  //       });
-  //     })
-  //     .catch(err => {
-  //       console.log('error fetching data: ', err);
-  //     });
-  //   AsyncStorage.getItem(ARRAY_KEY)
-  //     .then(d => {
-  //       console.log(ARRAY_KEY, d);
-  //       this.setState({
-  //         dataArray: JSON.parse(d),
-  //       });
-  //     })
-  //     .catch(err => {
-  //       console.log('error fetching data: ', err);
-  //     });
-  // }
+  componentDidMount() {
+    this.fetchData();
+    this.fetchDataArray();
+  }
 
   storeData = () => {
     AsyncStorage.setItem(STORAGE_KEY, DATA)
@@ -85,7 +66,7 @@ class AsyncStorageExample extends React.Component {
       .then(d => {
         console.log('d:', d)
         this.setState({
-          dataArray: JSON.parse(d),
+          dataArray: JSON.parse(d) || [],
         });
       })
       .catch(err => {
