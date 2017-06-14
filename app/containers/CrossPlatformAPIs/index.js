@@ -44,6 +44,10 @@ class CrossPlatformAPIs extends React.Component {
           onPress={() => this.props.navigation.navigate('NetInfoExample')}
         />
         <ListItem
+          title="PanResponder Basic"
+          onPress={() => this.props.navigation.navigate('PanResponderBasicExample')}
+        />
+        <ListItem
           title="PanResponder"
           onPress={() => this.props.navigation.navigate('PanResponderExample')}
         />

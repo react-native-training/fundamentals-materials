@@ -7,6 +7,7 @@ import DimensionsExample from '../containers/CrossPlatformAPIs/DimensionsExample
 import GeolocationExample from '../containers/CrossPlatformAPIs/GeolocationExample';
 import LinkingExample from '../containers/CrossPlatformAPIs/LinkingExample';
 import NetInfoExample from '../containers/CrossPlatformAPIs/NetInfoExample';
+import PanResponderBasicExample from '../containers/CrossPlatformAPIs/PanResponderBasic';
 import PanResponderExample from '../containers/CrossPlatformAPIs/PanResponderExample';
 import ShareExample from '../containers/CrossPlatformAPIs/ShareExample';
 
@@ -25,6 +26,7 @@ export {
   LinkingExample,
   NetInfoExample,
   PanResponderExample,
+  PanResponderBasicExample,
   ShareExample,
   CPAPISChallengeOne,
   CPAPISChallengeTwo,
