@@ -21,9 +21,6 @@ class TouchableHighlightExample extends React.Component {
           activeOpacity={0.9}
           style={styles.button}
           onPress={this.onPress}
-          onHideUnderlay={() => {
-            console.log('onHideUnderlay called')
-          }}
           underlayColor='#FF9900'
         >
           <Text style={styles.buttonText}>Click Me</Text>
