@@ -1,33 +1,37 @@
 {
-  "name": "materials",
-  "version": "0.0.1",
+  "name": "fundamentals-materials",
+  "version": "0.1.0",
   "private": true,
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "jest-expo"
   },
   "dependencies": {
-    "axios": "^0.16.1",
-    "babel-eslint": "^7.2.3",
+    "react": "16.0.0-alpha.12",
     "prop-types": "^15.5.10",
-    "react": "16.0.0-alpha.6",
-    "react-native": "0.44.0",
+    "react-native": "^0.45.1",
     "react-native-syntax-highlighter": "^1.1.0",
-    "react-navigation": "^1.0.0-beta.10",
-    "uuid": "^3.0.1"
+    "react-navigation": "^1.0.0-beta.11",
+    "expo": "^18.0.0",
+    "uuid": "^3.0.1",
+    "axios": "^0.16.1"
   },
   "devDependencies": {
-    "babel-jest": "19.0.0",
-    "babel-preset-react-native": "1.9.1",
+    "react-native-scripts": "0.0.40",
+    "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
-    "jest": "19.0.2",
-    "react-test-renderer": "16.0.0-alpha.6"
-  },
-  "jest": {
-    "preset": "react-native"
+    "jest-expo": "~18.0.0",
+    "react-test-renderer": "16.0.0-alpha.12"
   }
 }
