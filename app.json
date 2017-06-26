@@ -6,7 +6,7 @@
     "description": "Training materials for React Native Training fundamentals: https://github.com/react-native-training/fundamentals-materials",
     "slug": "react-native-training-materials",
     "privacy": "public",
-    "sdkVersion": "17.0.0",
+    "sdkVersion": "18.0.0",
     "icon": "./assets/img/icon.png",
     "loading": {
       "icon": "./assets/img/icon.png"
