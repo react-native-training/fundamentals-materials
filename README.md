@@ -1,7 +1,6 @@
 Check out [ReactNative.training](http://reactnative.training/) and contact us if you would like us to come to your company and deliver an existing curriculum or tailored training experience.
 
-We're also available for hire as consultants.
-
+### To use with Expo, check out [this](https://github.com/react-native-training/fundamentals-materials/tree/with-crna) branch
 
 # Training Materials for React Native Fundamentals Workshop
 
