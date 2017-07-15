@@ -10,22 +10,22 @@
     "axios": "^0.16.1",
     "babel-eslint": "^7.2.3",
     "prop-types": "^15.5.10",
-    "react": "16.0.0-alpha.6",
-    "react-native": "0.44.0",
+    "react": "16.0.0-alpha.12",
+		"react-native": "0.46.3",
     "react-native-syntax-highlighter": "^1.1.0",
     "react-navigation": "^1.0.0-beta.10",
     "uuid": "^3.0.1"
   },
   "devDependencies": {
-    "babel-jest": "19.0.0",
-    "babel-preset-react-native": "1.9.1",
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
-    "jest": "19.0.2",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
   },
   "jest": {
     "preset": "react-native"
